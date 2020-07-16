@@ -53,6 +53,7 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .logo {
@@ -955,6 +956,13 @@ a {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.35px;
+}
+
+.nav-about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 608px;
 }
 
 .about-us-company,
