@@ -118,6 +118,10 @@ main {
     align-items: center;
 }
 
+.row__item2 a i:hover{
+    color: #f16d7f;
+}
+
 .row__item2 i {
     height: 15px;
     color: #c0c0c0;
@@ -128,4 +132,12 @@ main {
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.clothes-link a:hover{
+    opacity: 0.5;
+}
+
+.clothes-link a:active{
+    opacity: 0.9;
 }
