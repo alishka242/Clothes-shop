@@ -56,28 +56,76 @@ main {
     text-align: right;
 }
 
-.product-feature {
+.clothes-link {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.clothes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     width: 278px;
 }
 
-.clothes img {
+.clothes-link img {
     width: 100px;
     height: 115px;
 }
 
-.unite-price {
-    width: 600px;
+.clothes-feature {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+}
 
+.clothes-feature div {
+    margin-top: 38px;
+}
+
+.clothes-feature div p {
+    width: 75px;
+    height: 20px;
+    margin: 0;
+    color: #575757;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.clothes-feature div p span{
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row h4 {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+}
+
+.row__item {
+    display: flex;
+    align-items: center;
+    flex: 4 0 0;
+}
+
+.row__item2 {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row__item2 i {
+    height: 15px;
+    color: #c0c0c0;
+}
+
+.price {
+    color: #656565;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
 }
