@@ -1,0 +1,38 @@
+.shoping-cart {
+    input {
+        outline: none;
+        border: none;
+    }
+
+    .way {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 148px;
+        margin-bottom: 90px;
+    }
+
+    .way_background {
+        background-color: #f8f3f4;
+    }
+
+    .way h2 {
+        color: #f16d7f;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .way h3 {
+        color: #636363;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    .way h3 span {
+        color: #f16d7f;
+    }
+}

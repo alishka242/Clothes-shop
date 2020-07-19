@@ -1,0 +1,131 @@
+.fetured-items-conteuner {
+    display: flex;
+    flex-direction: column;
+}
+
+.fetured-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 51px;
+    margin-bottom: 60px;
+}
+
+.fetured-items h3 {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.fetured-items p {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ftr-product {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.clothes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.clothes:hover .ftr-product_hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clothes:hover .clothers-p {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clothes a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 279px;
+    width: 263px;
+    text-transform: uppercase;
+}
+
+.clothes p {
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.clothes img {
+    display: block;
+    z-index: 0;
+    width: 261px;
+    height: 279px;
+}
+
+.ftr-name {
+    color: #222222;
+    font-size: 13px;
+    margin-top: 19px;
+}
+
+.ftr-price {
+    color: #f16d7f;
+    font-size: 16px;
+}
+
+.ftr-product_hover {
+    position: absolute;
+    display: none;
+    width: 263px;
+    height: 281px;
+    background-color: #3a3838;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.ftr-product_hover p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 37px;
+    border: 1px solid #ffffff;
+    text-transform: lowercase;
+}
+
+.ftr-product_hover p:hover {
+    background-color: rgb(255, 164, 164);
+    color: #3e3e40;
+}
+
+.all-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 113px;
+}
+
+.all-products a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.all-products a:hover {
+    background-color: #c7c7c7;
+}

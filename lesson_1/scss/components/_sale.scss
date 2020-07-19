@@ -1,0 +1,86 @@
+.sale {
+    display: flex;
+    flex-direction: row;
+    background-color: #222224;
+    height: 529px;
+    margin-bottom: 97px;
+}
+
+.sale-left {
+    background-image: url('../img/5_sale/sale.jpg');
+    background-repeat: no-repeat;
+    width: 727px;
+    height: 383px;
+    color: #ffffff;
+    padding-top: 146px;
+    padding-left: 40px;
+}
+
+.sale-left h2 {
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sale-left_color {
+    color: #f16d7f;
+}
+
+.sale-left h3 {
+    font-size: 32px;
+}
+
+.sale-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 373px;
+    color: #fbfbfb;
+}
+
+.sale-plus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 373px;
+}
+
+.sale-plus:nth-child(1) img {
+    width: 45px;
+    height: 32px;
+}
+
+.sale-plus:nth-child(2) img {
+    width: 40px;
+    height: 40px;
+}
+
+.sale-plus:nth-child(3) img {
+    width: 47px;
+    height: 35px;
+}
+
+.sale-plus-text {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-plus-text a {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 17px;
+    cursor: pointer;
+}
+
+.sale-plus-text a:hover {
+    color: #f16d7f;
+}
+
+.sale-plus-text p {
+    font-size: 14px;
+    font-family: 'Roboto-Thin';
+    line-height: 20px;
+    color: #fbfbfb;
+}
