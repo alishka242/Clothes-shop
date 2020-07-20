@@ -1,5 +1,4 @@
 @import '../constants/colors';
-@import '../constants/flexConstans';
 
 .container_color {
     background-color: $borderColor;
@@ -7,8 +6,10 @@
         height: 613px;
         background-image: url('../img/2_the-brand/the-brand.jpg');
         background-repeat: no-repeat;
-        @extend .flexRow;
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
+        align-items: center;
         .color-line {
             width: 12px;
             height: 95px;
@@ -17,11 +18,13 @@
         }
         .brand-text {
             height: 100px;
-            @extend .flexColumn;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: flex-start;
             margin-top: -24px;
             h1 {
-                color: #222222;
+                color: $darkBckgColor;
                 font-size: 60px;
                 font-weight: 700;
                 text-transform: uppercase;

@@ -87,7 +87,8 @@
                     }
                 }
                 &:hover .browsw-nav {
-                    @extend .flexColumn;
+                    display: flex;
+                    flex-direction: column;
                     justify-content: space-around;
                     align-items: flex-start;
                     padding-left: 10px;
@@ -157,7 +158,8 @@
             background-color: $baseBtnColor;
             color: $lightBckgColor;
             font-size: 15px;
-            @extend .flexRow;
+            display: flex;
+            align-items: center;
             justify-content: center;
             a{
                 color: $lightBckgColor;
@@ -263,8 +265,10 @@
 }
 
 .menu {
-    @extend .flexRow;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 51px;
     .menu-section {
         display: flex;
