@@ -46,10 +46,15 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for a, .for .for-left, .for .for-right {
+.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for a, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center; }
+
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+  display: flex;
+  justify-content: center;
   align-items: center; }
 
 .main {
@@ -342,10 +347,15 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for a, .for .for-left, .for .for-right {
+.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for a, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center; }
+
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+  display: flex;
+  justify-content: center;
   align-items: center; }
 
 .for {
@@ -400,118 +410,105 @@ button:active {
       width: 560px;
       height: 542px; }
 
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for a, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .fetured-items-conteuner {
-  display: flex;
-  flex-direction: column; }
-
-.fetured-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 51px;
-  margin-bottom: 60px; }
-
-.fetured-items h3 {
-  color: #222222;
-  font-size: 30px;
-  font-weight: 700; }
-
-.fetured-items p {
-  color: #9f9f9f;
-  font-size: 14px;
-  font-weight: 400; }
-
-.ftr-product {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  margin-bottom: 80px; }
-
-.clothes {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 20px; }
-
-.clothes:hover .ftr-product_hover {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.clothes:hover .clothers-p {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-
-.clothes a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 279px;
-  width: 263px;
-  text-transform: uppercase; }
-
-.clothes p {
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-left: 15px; }
-
-.clothes img {
-  display: block;
-  z-index: 0;
-  width: 261px;
-  height: 279px; }
-
-.ftr-name {
-  color: #222222;
-  font-size: 13px;
-  margin-top: 19px; }
-
-.ftr-price {
-  color: #f16d7f;
-  font-size: 16px; }
-
-.ftr-product_hover {
-  position: absolute;
-  display: none;
-  width: 263px;
-  height: 281px;
-  background-color: #3a3838;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 400;
-  opacity: 0.8; }
-
-.ftr-product_hover p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 123px;
-  height: 37px;
-  border: 1px solid #ffffff;
-  text-transform: lowercase; }
-
-.ftr-product_hover p:hover {
-  background-color: #ffa4a4;
-  color: #3e3e40; }
-
-.all-products {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 113px; }
-
-.all-products a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 212px;
-  height: 48px;
-  background-color: #f16d7f;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 400; }
-
-.all-products a:hover {
-  background-color: #c7c7c7; }
+  .fetured-items-conteuner .fetured-items {
+    height: 51px;
+    margin-bottom: 60px; }
+    .fetured-items-conteuner .fetured-items h3 {
+      color: #222224;
+      font-size: 30px;
+      font-weight: 700; }
+    .fetured-items-conteuner .fetured-items p {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 400; }
+  .fetured-items-conteuner .ftr-product {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px; }
+    .fetured-items-conteuner .ftr-product .clothes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .fetured-items-conteuner .ftr-product .clothes a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 279px;
+        width: 263px;
+        text-transform: uppercase; }
+        .fetured-items-conteuner .ftr-product .clothes a img {
+          display: block;
+          z-index: 0;
+          width: 261px;
+          height: 279px; }
+        .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover {
+          position: absolute;
+          display: none;
+          width: 263px;
+          height: 281px;
+          background-color: #4a4a4a;
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 400;
+          opacity: 0.8; }
+          .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 123px;
+            height: 37px;
+            border: 1px solid #ffffff;
+            text-transform: lowercase; }
+            .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover p:hover {
+              background-color: #e6e6e6;
+              color: #4a4a4a; }
+      .fetured-items-conteuner .ftr-product .clothes .clothers-p .ftr-name {
+        color: #222222;
+        font-size: 13px;
+        margin-top: 19px; }
+      .fetured-items-conteuner .ftr-product .clothes .clothers-p .ftr-price {
+        color: #f16d7f;
+        font-size: 16px; }
+      .fetured-items-conteuner .ftr-product .clothes p {
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-left: 15px; }
+      .fetured-items-conteuner .ftr-product .clothes:hover .ftr-product_hover {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .fetured-items-conteuner .ftr-product .clothes:hover .clothers-p {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .fetured-items-conteuner .all-products a {
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400; }
+    .fetured-items-conteuner .all-products a:hover {
+      background-color: #c7c7c7; }
 
 .sale {
   display: flex;
