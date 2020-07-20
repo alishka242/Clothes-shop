@@ -1,7 +1,7 @@
 @import '../constants/colors';
 
 .container_color {
-    background-color: $borderColor;
+    background-color: #e8e8e8;
     .the-brand {
         height: 613px;
         background-image: url('../img/2_the-brand/the-brand.jpg');
@@ -24,7 +24,7 @@
             align-items: flex-start;
             margin-top: -24px;
             h1 {
-                color: $darkBckgColor;
+                color: $baseTextColor;
                 font-size: 60px;
                 font-weight: 700;
                 text-transform: uppercase;

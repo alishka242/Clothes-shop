@@ -186,7 +186,7 @@
                             text-transform: uppercase;
                         }
                         .item-name {
-                            color: $darkBckgColor;
+                            color: $baseTextColor;
                             font-size: 12px;
                             font-weight: 700;
                             text-transform: uppercase;
@@ -210,7 +210,7 @@
                 .total {
                     @extend .flexRow;
                     width: 230px;
-                    color: $darkBckgColor;
+                    color: $baseTextColor;
                     font-size: 16px;
                     font-weight: 700;
                 }
@@ -272,7 +272,7 @@
     height: 51px;
     .menu-section {
         display: flex;
-        color: $darkBckgColor;
+        color: $baseTextColor;
         align-items: center;
         font-size: 14px;
         height: 20px;
@@ -310,7 +310,7 @@
                 h3 {
                     border-bottom: 1px solid $borderColor;
                     a {
-                        color: $darkBckgColor;
+                        color: $baseTextColor;
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 32px;
@@ -322,7 +322,7 @@
                             opacity: 1;
                         }
                         &:active {
-                            color: $darkBckgColor;
+                            color: $baseTextColor;
                         }
                     }
                 }
@@ -337,7 +337,7 @@
                         opacity: 0.7;
                     }
                     &:active {
-                        color: $darkBckgColor;
+                        color: $baseTextColor;
                     }
                 }
             }

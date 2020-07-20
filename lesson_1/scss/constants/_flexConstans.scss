@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.flexRowJusti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .flexColumn {
     display: flex;
     flex-direction: column;
@@ -12,13 +18,13 @@
     align-items: center;
 }
 
-.flexColumnJustAround{
+.flexColumnJustAround {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.flexJustAlignCenter{
+.flexJustAlignCenter {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,118 +1,116 @@
+@import "../constants/colors";
+@import "../constants/flexConstans";
+
 .subscribe {
+    margin: 0 auto;
+    width: 1600px;
     background-image: url('../img/6_subscribe/subscribe.jpg');
+    background-color: #4a4a4a;
+    background-blend-mode: unset;
+    background-size: cover;
     background-repeat: no-repeat;
-}
 
-.sbsc-content {
-    height: 438px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
+    .sbsc-content {
+        height: 438px;
+        @extend .flexRow;
 
-.sbsc-left {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 536px;
-}
+        .sbsc-left {
+            @extend .flexRowJusti;
+            align-items: flex-start;
+            width: 536px;
 
-.sbsc-text {
-    width: 396px;
-    color: #222224;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 19px;
-}
+            .sbsc-text {
+                width: 396px;
+                color: $baseTextColor;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 19px;
+            }
 
-.sbsc-name {
-    color: #f16d7f;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 26px;
-}
+            .sbsc-name {
+                color: $baseBtnColor;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+            }
 
-.sbsc-sec-name {
-    color: #222224;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0.3px;
-    line-height: 14px;
-}
+            .sbsc-sec-name {
+                color: $baseTextColor;
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+                line-height: 14px;
+            }
+            
+            .sbsc-line-flex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 89px;
+                height: 45px;
 
-.sbsc-line-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 89px;
-    height: 45px;
-}
+                .sbcs-line-left {
+                    width: 38px;
+                    height: 4px;
+                    background-color: $baseFooterColor;
 
-.sbcs-line-left {
-    width: 38px;
-    height: 4px;
-    background-color: #d6d6d6;
-}
+                    &:hover {
+                        background-color: $baseBtnColor;
+                    }
+                }
 
-.sbcs-line-left:hover {
-    background-color: #f16d7f;
-}
+                .sbcs-line-right {
+                    width: 38px;
+                    height: 4px;
+                    background-color: $baseBtnColor;
 
-.sbcs-line-right {
-    width: 38px;
-    height: 4px;
-    background-color: #f16d7f;
-}
-
-.sbcs-line-right:hover {
-    background-color: #d6d6d6;
-}
-
-.sbsc-right h3 {
-    color: #222224;
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 54px;
-}
-
-.sbsc-right h4 {
-    font-weight: 300;
-    letter-spacing: 0.35px;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-.sbsc-right input {
-    width: 282px;
-    border: none;
-    height: 46px;
-    border-radius: 50px 0px 0px 50px;
-    background-color: #e1e1e1;
-    padding-left: 28px;
-}
-
-.sbsc-right input:focus {
-    outline: none;
-}
-
-.sbsc-right button {
-    width: 104px;
-    border: none;
-    height: 46px;
-    border-radius: 0px 50px 50px 0px;
-    background-color: #f16d7f;
-    color: #ffffff;
-}
-
-.sbsc-right button:focus {
-    outline: none;
-}
-
-.sbsc-right button:hover {
-    background-color: #c7c7c7;
+                    &:hover {
+                        background-color: $baseFooterColor;
+                    }
+                }
+            }
+        }
+        .sbsc-right{
+            h3 {
+                color: $baseTextColor;
+                font-size: 24px;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 54px;
+            }
+            h4 {
+                font-weight: 300;
+                letter-spacing: 0.35px;
+                margin-bottom: 35px;
+                text-align: center;
+            }
+            input {
+                width: 282px;
+                border: none;
+                height: 46px;
+                border-radius: 50px 0px 0px 50px;
+                background-color: $baseFooterColor;
+                padding-left: 28px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                width: 104px;
+                border: none;
+                height: 46px;
+                border-radius: 0px 50px 50px 0px;
+                background-color: $baseBtnColor;
+                color: $lightBckgColor;
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    background-color: $backgHoverGray;
+                }
+            }
+        }
+    }
 }
