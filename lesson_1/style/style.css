@@ -40,13 +40,13 @@ button:active {
   margin: 0 auto;
   width: 1145px; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu, .menu .menu-woman:hover .menu-drop-down, .container_color .the-brand {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu, .menu .menu-woman:hover .menu-drop-down, .container_color .the-brand, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexColumn, .main .main-left .search .browse:hover .browsw-nav, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .container_color .the-brand .brand-text {
+.flexColumn, .main .main-left .search .browse:hover .browsw-nav, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .container_color .the-brand .brand-text, .for a, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -297,13 +297,13 @@ button:active {
         .menu .menu-woman .menu-drop-down .menu-dr-dn-column a:active {
           color: #222224; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu, .menu .menu-woman:hover .menu-drop-down, .container_color .the-brand {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu, .menu .menu-woman:hover .menu-drop-down, .container_color .the-brand, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexColumn, .main .main-left .search .browse:hover .browsw-nav, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .container_color .the-brand .brand-text {
+.flexColumn, .main .main-left .search .browse:hover .browsw-nav, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .container_color .the-brand .brand-text, .for a, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -335,82 +335,69 @@ button:active {
         .container_color .the-brand .brand-text h2 .brand-h2_color {
           color: #f16d7f; }
 
-.for {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu, .menu .menu-woman:hover .menu-drop-down, .container_color .the-brand, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; }
+
+.flexColumn, .main .main-left .search .browse:hover .browsw-nav, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .container_color .the-brand .brand-text, .for a, .for .for-left, .for .for-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.for {
   height: 1020px; }
-
-.for-left {
-  height: 823px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.for-men {
-  background-image: url("../img/3_for/for-men.jpg");
-  background-repeat: no-repeat;
-  width: 560px;
-  height: 542px; }
-
-.accesories {
-  background-image: url("../img/3_for/accesories.jpg");
-  background-repeat: no-repeat;
-  background-color: #dadad2;
-  background-position: top right;
-  width: 560px;
-  height: 261px; }
-
-.for-right {
-  height: 823px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.for-women {
-  background-image: url("../img/3_for/for-women.jpg");
-  background-repeat: no-repeat;
-  width: 560px;
-  height: 261px; }
-
-.for-kids {
-  background-image: url("../img/3_for/for-kids.jpg");
-  background-repeat: no-repeat;
-  width: 560px;
-  height: 542px; }
-
-.for a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 82px;
-  background-color: #ffffff;
-  font-weight: 700;
-  margin-top: 26px; }
-
-.for a:hover {
-  background-color: #d6d6d6; }
-
-.for_center {
-  text-align: left; }
-
-.for_white-box {
-  display: block;
-  text-transform: uppercase;
-  color: #222222;
-  font-size: 18px; }
-
-.for_color-text {
-  display: block;
-  text-transform: uppercase;
-  color: #f16d7f;
-  font-size: 29px; }
-
-.accesories a {
-  width: 225px; }
+  .for a {
+    justify-content: center;
+    width: 175px;
+    height: 82px;
+    background-color: #ffffff;
+    font-weight: 700;
+    margin-top: 26px; }
+    .for a:hover {
+      background-color: #d6d6d6; }
+    .for a .for_center {
+      text-align: left; }
+      .for a .for_center .for_white-box {
+        display: block;
+        text-transform: uppercase;
+        color: #222222;
+        font-size: 18px; }
+      .for a .for_center .for_color-text {
+        display: block;
+        text-transform: uppercase;
+        color: #f16d7f;
+        font-size: 29px; }
+  .for .for-left {
+    height: 823px; }
+    .for .for-left .for-men {
+      background-image: url("../img/3_for/for-men.jpg");
+      background-repeat: no-repeat;
+      width: 560px;
+      height: 542px; }
+    .for .for-left .accesories {
+      background-image: url("../img/3_for/accesories.jpg");
+      background-repeat: no-repeat;
+      background-color: #dadad2;
+      background-position: top right;
+      width: 560px;
+      height: 261px; }
+      .for .for-left .accesories a {
+        width: 225px; }
+  .for .for-right {
+    height: 823px; }
+    .for .for-right .for-women {
+      background-image: url("../img/3_for/for-women.jpg");
+      background-repeat: no-repeat;
+      width: 560px;
+      height: 261px; }
+    .for .for-right .for-kids {
+      background-image: url("../img/3_for/for-kids.jpg");
+      background-repeat: no-repeat;
+      width: 560px;
+      height: 542px; }
 
 .fetured-items-conteuner {
   display: flex;
