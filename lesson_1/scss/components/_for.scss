@@ -5,8 +5,8 @@
     @extend .flexRow;
     height: 1020px;
     a {
-        @extend .flexColumn;
-        justify-content: center;
+        @extend .flexJustAlignCenter;
+        flex-direction: column;
         width: 175px;
         height: 82px;
         background-color: $lightBckgColor;

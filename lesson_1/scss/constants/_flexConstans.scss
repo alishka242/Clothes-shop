@@ -12,6 +12,12 @@
     align-items: center;
 }
 
+.flexColumnJustAround{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .flexJustAlignCenter{
     display: flex;
     justify-content: center;
