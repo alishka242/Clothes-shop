@@ -46,7 +46,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -57,7 +57,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJustAround, .sale .sale-right {
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -357,7 +357,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -368,7 +368,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJustAround, .sale .sale-right {
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -436,7 +436,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -447,7 +447,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJustAround, .sale .sale-right {
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -546,7 +546,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -557,7 +557,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJustAround, .sale .sale-right {
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -630,7 +630,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -641,7 +641,7 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJustAround, .sale .sale-right {
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -733,65 +733,71 @@ button:active {
       .subscribe .sbsc-content .sbsc-right button:hover {
         background-color: #c7c7c7; }
 
-.about-us {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center; }
+
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.about-us {
   height: 260px;
   margin-top: 109px;
   margin-bottom: 89px; }
+  .about-us .about-us-text {
+    width: 446px;
+    letter-spacing: 0.35px; }
+    .about-us .about-us-text p {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.35px; }
+  .about-us .nav-about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 608px; }
+    .about-us .nav-about-us .about-us-information {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .about-us .nav-about-us .about-us-information h3 a {
+        color: #f16d7f;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.45px; }
 
-.about-us-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 446px;
-  letter-spacing: 0.35px; }
-
-.about-us-text p {
-  color: #898989;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.35px; }
-
-.nav-about-us {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 608px; }
-
-.about-us-company,
-.about-us-information,
-.about-us-shop-category {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.about-us-company h3 a,
-.about-us-information h3 a,
-.about-us-shop-category h3 a {
-  color: #f16d7f;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.45px; }
-
-.about-us-company h3 a:hover,
-.about-us-information h3 a:hover,
-.about-us-shop-category h3 a:hover {
+.about-us-information h3 .about-us-information h3 a:hover {
   color: #9f9f9f; }
 
-.about-us-company a,
-.about-us-information a,
-.about-us-shop-category a {
+.about-us-information a {
   color: #898989;
   font-size: 16px;
   font-weight: 400; }
 
-.about-us-company a:hover,
-.about-us-information a:hover,
-.about-us-shop-category a:hover {
+.about-us-information a:hover {
   color: #f16d7f; }
 
 footer {

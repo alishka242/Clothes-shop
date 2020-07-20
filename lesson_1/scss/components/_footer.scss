@@ -1,51 +1,47 @@
+@import "../constants/colors";
+@import "../constants/flexConstans";
+
 footer {
     height: 79px;
     background-color: #e6e6e6;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 79px;
-}
-
-.footer p a {
-    color: #7a7a7a;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-}
-
-.footer p a:hover {
-    color: #3e3e40;
-}
-
-.footer-link {
-    width: 191px;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footer-link a {
-    height: 16px;
-    color: #b2b2b2;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.footer-link a i {
-    width: 32px;
-    height: 25px;
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 8px;
-}
-
-.footer-link a i:hover {
-    color: #ffffff;
-    background-color: #f16d7f;
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 79px;
+        p{
+            a {
+                color: $moreTextColor;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.4px;
+                &:hover {
+                    color: #3e3e40;
+                }
+            }
+        }
+        .footer-link {
+            width: 191px;
+            height: 32px;
+            @extend .flexRowJusti;
+            a {
+                height: 16px;
+                color: $moreTextColor;
+                font-size: 16px;
+                font-weight: 400;
+                i {
+                    width: 32px;
+                    height: 25px;
+                    background-color: $lightBckgColor;
+                    text-align: center;
+                    padding-top: 8px;
+                    &:hover {
+                        color: $lightBckgColor;
+                        background-color: $baseBtnColor;
+                    }
+                }
+            }
+        }
+    }
 }

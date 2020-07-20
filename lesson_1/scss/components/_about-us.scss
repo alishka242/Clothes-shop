@@ -1,70 +1,54 @@
+@import "../constants/colors";
+@import "../constants/flexConstans";
+
 .about-us {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend .flexRowJusti;
     height: 260px;
     margin-top: 109px;
     margin-bottom: 89px;
-}
 
-.about-us-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 446px;
-    letter-spacing: 0.35px;
-}
+    .about-us-text {
+        @extend .flexColumnJustAround;
+        width: 446px;
+        letter-spacing: 0.35px;
 
-.about-us-text p {
-    color: #898989;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.35px;
-}
+        p {
+            color: $moreTextColor;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.35px;
+        }
+    }
 
-.nav-about-us{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 608px;
-}
-
-.about-us-company,
-.about-us-information,
-.about-us-shop-category {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.about-us-company h3 a,
-.about-us-information h3 a,
-.about-us-shop-category h3 a {
-    color: #f16d7f;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.45px;
-}
-
-
-.about-us-company h3 a:hover,
-.about-us-information h3 a:hover,
-.about-us-shop-category h3 a:hover {
-    color: #9f9f9f;
-}
-
-.about-us-company a,
-.about-us-information a,
-.about-us-shop-category a {
-    color: #898989;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about-us-company a:hover,
-.about-us-information a:hover,
-.about-us-shop-category a:hover {
-    color: #f16d7f;
+    .nav-about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 608px;
+        .about-us-information {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3{
+                a {
+                    color: $baseBtnColor;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.45px;
+                    &:hover {
+                        color: $moreTextColor;
+                }
+            }
+            a {
+                color: #898989;
+                font-size: 16px;
+                font-weight: 400;
+                &:hover {
+                    color: $baseBtnColor;
+                }
+            }
+        }
+    }
 }
