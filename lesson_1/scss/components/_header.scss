@@ -1,32 +1,36 @@
+@import "../constants/colors";
+@import "../constants/flexConstans";
+
 .main {
     height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid #e8e8e8;
-}
-
-.logo {
-    height: 51px;
-    width: 165px;
-}
-
-.logo a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo span {
-    font-size: 27px;
-    font-weight: inherit;
-    color: #3e3e40;
-    display: inline-block;
-}
-
-.logo .logo-text_color {
-    font-weight: 700;
-    color: #f16d7f;
+    @extend .flexRow;
+    border-bottom: 1px solid $borderColor;
+    .main-left {
+        @extend .flexRow;
+        width: 605px;
+        .logo {
+            height: 51px;
+            width: 165px;
+            a {
+                @extend .flexRow;
+                span {
+                    font-size: 27px;
+                    font-weight: inherit;
+                    color: #3e3e40;
+                    display: inline-block;
+                    .logo-text_color {
+                        font-weight: 700;
+                        color: $baseBtnColor;
+                    }
+                }
+            }
+        }
+    }
+    .main-right {
+        @extend .flexRow;
+        width: 188px;
+        position: relative;
+    }
 }
 
 /*BROWSE*/
@@ -42,19 +46,19 @@
     font-size: 14px;
     border-radius: 3px;
     border: 1px solid #e6e6e6;
+    .browse {
+        font-weight: 300;
+        color: #222222;
+        line-height: 32px;
+        height: 38px;
+        width: 87px;
+        padding: 0px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }    
 }
 
-.browse {
-    font-weight: 300;
-    color: #222222;
-    line-height: 32px;
-    height: 38px;
-    width: 87px;
-    padding: 0px;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-}
 
 .browse:active {
     background-color: #f7f7f7;
@@ -143,25 +147,13 @@
     color: #e6e6e6;
 }
 
-.main-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 605px;
-}
+
 
 .search input:focus {
     outline: none;
 }
 
-.main-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 188px;
-    position: relative;
-}
+
 
 /*BASKET*/
 .basket i {
