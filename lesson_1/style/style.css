@@ -357,7 +357,7 @@ button:active {
     font-weight: 700;
     margin-top: 26px; }
     .for a:hover {
-      background-color: #d6d6d6; }
+      box-shadow: 5px 0px 8px 1px rgba(0, 0, 0, 0.5); }
     .for a .for_center {
       text-align: left; }
       .for a .for_center .for_white-box {

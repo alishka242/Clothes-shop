@@ -9,25 +9,25 @@
         justify-content: center;
         width: 175px;
         height: 82px;
-        background-color: #ffffff;
+        background-color: $lightBckgColor;
         font-weight: 700;
         margin-top: 26px;
         &:hover {
-            background-color: #d6d6d6;
+            box-shadow: 5px 0px 8px 1px rgba(0, 0, 0, 0.5);
         }
         .for_center {
             text-align: left;
             .for_white-box {
                 display: block;
                 text-transform: uppercase;
-                color: #222222;
+                color: $baseTextColor;
                 font-size: 18px;
             }
             .for_color-text {
                 display: block;
                 text-transform: uppercase;
             
-                color: #f16d7f;
+                color: $baseBtnColor;
                 font-size: 29px;
             }
         }
