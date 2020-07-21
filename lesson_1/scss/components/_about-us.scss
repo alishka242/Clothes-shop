@@ -11,6 +11,7 @@
         @extend .flexColumnJustAround;
         width: 446px;
         letter-spacing: 0.35px;
+        @import "../constants/logo";
 
         p {
             color: $moreTextColor;
@@ -26,29 +27,36 @@
         flex-direction: row;
         justify-content: space-between;
         width: 608px;
+
         .about-us-information {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            h3{
+
+            h3 {
                 a {
                     color: $baseBtnColor;
                     font-size: 18px;
                     font-weight: 700;
                     text-transform: uppercase;
                     letter-spacing: 0.45px;
+
                     &:hover {
                         color: $moreTextColor;
+                    }
                 }
             }
+
             a {
                 color: #898989;
                 font-size: 16px;
                 font-weight: 400;
+
                 &:hover {
                     color: $baseBtnColor;
                 }
             }
+
         }
     }
 }

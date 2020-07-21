@@ -40,13 +40,13 @@ button:active {
   margin: 0 auto;
   width: 1145px; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -351,13 +351,13 @@ button:active {
         .container_color .the-brand .brand-text h2 .brand-h2_color {
           color: #f16d7f; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -430,13 +430,13 @@ button:active {
       width: 560px;
       height: 542px; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -540,13 +540,13 @@ button:active {
     .fetured-items-conteuner .all-products a:hover {
       background-color: #c7c7c7; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -624,13 +624,13 @@ button:active {
           line-height: 20px;
           color: #ffffff; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -733,13 +733,13 @@ button:active {
       .subscribe .sbsc-content .sbsc-right button:hover {
         background-color: #c7c7c7; }
 
-.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -767,6 +767,17 @@ button:active {
   .about-us .about-us-text {
     width: 446px;
     letter-spacing: 0.35px; }
+    .about-us .about-us-text .logo {
+      height: 51px;
+      width: 165px; }
+      .about-us .about-us-text .logo a span {
+        font-size: 27px;
+        font-weight: inherit;
+        color: #222222;
+        display: inline-block; }
+        .about-us .about-us-text .logo a span .logo-text_color {
+          font-weight: 700;
+          color: #f16d7f; }
     .about-us .about-us-text p {
       color: #9f9f9f;
       font-size: 14px;
@@ -788,58 +799,72 @@ button:active {
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.45px; }
+        .about-us .nav-about-us .about-us-information h3 a:hover {
+          color: #9f9f9f; }
+      .about-us .nav-about-us .about-us-information a {
+        color: #898989;
+        font-size: 16px;
+        font-weight: 400; }
+        .about-us .nav-about-us .about-us-information a:hover {
+          color: #f16d7f; }
 
-.about-us-information h3 .about-us-information h3 a:hover {
-  color: #9f9f9f; }
-
-.about-us-information a {
-  color: #898989;
-  font-size: 16px;
-  font-weight: 400; }
-
-.about-us-information a:hover {
-  color: #f16d7f; }
-
-footer {
-  height: 79px;
-  background-color: #e6e6e6; }
-
-.footer {
+.flexRow, .main, .main .main-left, .main .main-left .logo a, .main .main-right, .main .main-right .my_account .my-account-cart .selected-item, .main .main-right .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  height: 79px; }
+  align-items: center; }
 
-.footer p a {
-  color: #7a7a7a;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.4px; }
-
-.footer p a:hover {
-  color: #3e3e40; }
-
-.footer-link {
-  width: 191px;
-  height: 32px;
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
-.footer-link a {
-  height: 16px;
-  color: #b2b2b2;
-  font-size: 16px;
-  font-weight: 400; }
+.flexColumn, .main .main-right .my_account .my-account-cart .selected-item div, .main .main-right .my_account:hover .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
 
-.footer-link a i {
-  width: 32px;
-  height: 25px;
-  background-color: #ffffff;
-  text-align: center;
-  padding-top: 8px; }
+.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
 
-.footer-link a i:hover {
-  color: #ffffff;
-  background-color: #f16d7f; }
+.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  height: 79px;
+  background-color: #e6e6e6; }
+  footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px; }
+    footer .footer p a {
+      color: #9f9f9f;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.4px; }
+      footer .footer p a:hover {
+        color: #3e3e40; }
+    footer .footer .footer-link {
+      width: 191px;
+      height: 32px; }
+      footer .footer .footer-link a {
+        height: 16px;
+        color: #9f9f9f;
+        font-size: 16px;
+        font-weight: 400; }
+        footer .footer .footer-link a i {
+          width: 32px;
+          height: 25px;
+          background-color: #ffffff;
+          text-align: center;
+          padding-top: 8px; }
+          footer .footer .footer-link a i:hover {
+            color: #ffffff;
+            background-color: #f16d7f; }
