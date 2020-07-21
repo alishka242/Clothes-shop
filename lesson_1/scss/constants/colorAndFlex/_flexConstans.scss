@@ -18,6 +18,12 @@
     align-items: center;
 }
 
+.flexColumnJusti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .flexColumnJustAround {
     display: flex;
     flex-direction: column;

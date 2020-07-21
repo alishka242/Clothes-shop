@@ -1,10 +1,7 @@
 @import './fonts/font';
-@import './scss/base/base';
-@import './scss/components/header';
-@import './scss/components/brand';
-@import './scss/components/for';
-@import './scss/components/fetured-items';
-@import './scss/components/sale';
-@import './scss/components/subscribe';
-@import './scss/components/about-us';
-@import './scss/components/footer';
+@import './base/base';
+@import './components/header';
+@import './components/main-index';
+@import './components/subscribe';
+@import './components/about-us';
+@import './components/footer';

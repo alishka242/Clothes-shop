@@ -1,141 +1,129 @@
-.shoping-cart {
+.container {
     .shoping-link {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-transform: uppercase;
-        color: #4a4a4a;
+        @extend .flexRowJusti;
+        color: $darkGray;
         font-size: 14px;
         font-weight: 700;
         margin-top: 45px;
         margin-bottom: 63px;
+
+        a {
+            width: 225px;
+            height: 50px;
+            border: 1px solid $borderColor;
+            background-color: $lightBckgColor;
+            color: $baseTextColor;
+            @extend .flexJustAlignCenter;
+            flex-direction: row;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $baseBtnColor;
+            }
+
+            &:active {
+                color: $lightTextColor;
+            }
+        }
     }
 
-    .shoping-link a {
-        width: 225px;
-        height: 50px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #222222;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .shoping-link a:hover {
-        background-color: #f16d7f;
-    }
-
-    .shoping-link a:active {
-        color: #f5f3f3;
-    }
 
     form {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @extend .flexRowJusti;
         margin-bottom: 80px;
-    }
 
-    form h3 {
-        color: #222222;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+        .adress {
+            @extend .flexColumnJusti;
+            height: 268px;
 
-    .adress {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 268px;
-    }
+            h3 {
+                color: $baseTextColor;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
 
-    .adress input {
-        width: 355px;
-        height: 45px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #b1b1b1;
-        font-size: 13px;
-        font-weight: 300;
-        padding-left: 18px;
-    }
+            input {
+                width: 355px;
+                height: 45px;
+                border: 1px solid $baseFooterColor;
+                background-color: $lightBckgColor;
+                color: $lightGray;
+                font-size: 13px;
+                font-weight: 300;
+                padding-left: 18px;
+            }
 
-    .adress a {
-        width: 100px;
-        height: 35px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #4a4a4a;
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+            a {
+                width: 100px;
+                height: 35px;
+                border: 1px solid $baseFooterColor;
+                background-color: $lightBckgColor;
+                color: #4a4a4a;
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                @extend .flexJustAlignCenter;
 
-    .adress a:hover {
-        background-color: #f16d7f;
-    }
+                &:hover {
+                    background-color: #f16d7f;
+                }
 
-    .adress a:active {
-        color: #f5f3f3;
-    }
+                &:active {
+                    color: #f5f3f3;
+                }
+            }
+        }
 
-    .coupon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 184px;
-        outline: none;
-        border: none;
-    }
+        .coupon {
+            @extend .flexColumnJusti;
+            height: 184px;
+            outline: none;
+            border: none;
 
-    .coupon p {
-        color: #000000;
-        font-size: 14px;
-        font-weight: 300;
-    }
+            p {
+                color: $baseTextColor;
+                font-size: 14px;
+                font-weight: 300;
+            }
 
-    .coupon input {
-        width: 355px;
-        height: 45px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #b1b1b1;
-        font-size: 13px;
-        font-weight: 300;
-        padding-left: 18px;
-    }
+            input {
+                width: 355px;
+                height: 45px;
+                border: 1px solid $baseFooterColor;
+                background-color: $lightBckgColor;
+                color: $backgHoverGray;
+                font-size: 13px;
+                font-weight: 300;
+                padding-left: 18px;
+            }
 
-    .coupon a {
-        width: 118px;
-        height: 35px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #4a4a4a;
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+            a {
+                width: 118px;
+                height: 35px;
+                border: 1px solid $baseFooterColor;
+                background-color: $lightBckgColor;
+                color: #4a4a4a;
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                @extend .flexJustAlignCenter;
 
-    .coupon a:hover {
-        background-color: #f16d7f;
-    }
+                &:hover {
+                    background-color: $baseBtnColor;
+                }
 
-    .coupon a:active {
-        color: #f5f3f3;
+                &:active {
+                    color: $lightTextColor;
+                }
+
+                ;
+            }
+        }
     }
 
     .total {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @extend .flexColumnJusti;
         align-items: flex-end;
         width: 317px;
         height: 132px;
@@ -143,44 +131,44 @@
         padding-top: 40px;
         padding-bottom: 42px;
         padding-right: 42px;
-    }
 
-    .total p {
-        color: #4a4a4a;
-        font-size: 11px;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
+        p {
+            color: $darkGray;
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
 
-    .total h3 {
-        color: #222222;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        border-bottom: 1px solid #ebeaea;
-        padding-bottom: 22px;
-        width: 273px;
-        text-align: right;
-    }
+        h3 {
+            color: $baseTextColor;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid $baseFooterColor;
+            padding-bottom: 22px;
+            width: 273px;
+            text-align: right;
 
-    .total h3 span {
-        color: #f16d7f;
-    }
+            span {
+                color: $baseBtnColor;
+            }
+        }
 
-    .total button {
-        width: 273px;
-        height: 50px;
-        background-color: #f16d7f;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        outline: none;
-        border: none;
-    }
+        button {
+            width: 273px;
+            height: 50px;
+            background-color: $baseBtnColor;
+            color: $lightBckgColor;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
 
-    .total button:active {
-        outline: none;
-        border: none;
+            &:active {
+                outline: none;
+                border: none;
+            }
+        }
     }
 }
