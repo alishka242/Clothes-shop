@@ -1,11 +1,12 @@
-.container {
-    .shoping-link {
+.shopping-link-cart{
+    .shopping-link {
         @extend .flexRowJusti;
         color: $darkGray;
         font-size: 14px;
         font-weight: 700;
         margin-top: 45px;
         margin-bottom: 63px;
+        outline: none;
 
         a {
             width: 225px;
@@ -52,6 +53,9 @@
                 font-size: 13px;
                 font-weight: 300;
                 padding-left: 18px;
+                &:focus{
+                    outline: $baseFooterColor;
+                }
             }
 
             a {
@@ -80,6 +84,10 @@
             height: 184px;
             outline: none;
             border: none;
+            
+            h3{
+                text-transform: uppercase;
+            }
 
             p {
                 color: $baseTextColor;
@@ -96,6 +104,9 @@
                 font-size: 13px;
                 font-weight: 300;
                 padding-left: 18px;
+                &:focus{
+                    outline: none;
+                }
             }
 
             a {
@@ -116,8 +127,6 @@
                 &:active {
                     color: $lightTextColor;
                 }
-
-                ;
             }
         }
     }

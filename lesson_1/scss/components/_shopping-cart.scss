@@ -1,4 +1,4 @@
-.shoping-cart {
+.shopping-cart {
     input {
         outline: none;
         border: none;
@@ -157,7 +157,7 @@
     }
     
     /*form-shop*/
-    .shoping-link {
+    .shopping-link {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -169,7 +169,7 @@
         margin-bottom: 63px;
     }
     
-    .shoping-link a {
+    .shopping-link a {
         width: 225px;
         height: 50px;
         border: 1px solid #eaeaea;
@@ -179,11 +179,11 @@
         align-items: center;
     }
     
-    .shoping-link a:hover {
+    .shopping-link a:hover {
         background-color: #f16d7f;
     }
     
-    .shoping-link a:active {
+    .shopping-link a:active {
         color: #f5f3f3;
     }
     
