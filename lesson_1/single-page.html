@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping cart</title>
+    <title>Single Page</title>
+    <link rel="stylesheet" href="/style/single-page.css">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="./style/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/shopping-cart.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <div class="main">
             <div class="main-left">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="#">
                         <img src="img/1_header/logo.png" alt="logo">
                         <span>BRAN<span class="logo-text_color">D</span>
                         </span>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="main-right">
-                <a href="#" class="basket">
+                <a href="shopping-cart.html" class="basket">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
                 <div class="my_account">
@@ -103,12 +103,11 @@
                         <button class="checkout-btn">Checkout</button>
                         <button class="go-to-cart-btn">Go to cart</button>
                     </div>
-
                 </div>
             </div>
         </div>
         <nav class="menu container">
-            <a href="index.html" class="menu-section">Home</a>
+            <a href="#" class="menu-section">Home</a>
             <a href="#" class="menu-section">Man</a>
             <div class="menu-woman">
                 <a href="#" class="menu-section">Women</a>
@@ -158,113 +157,7 @@
             <h3>Home / Men / <span>New Arrivals</span></h3>
         </div>
     </section>
-    <section class="container">
-        <main>
-            <div class="row">
-                <h4 class="row__item">Product Details</h4>
-                <h4 class="row__item2">unite Price</h4>
-                <h4 class="row__item2">Quantity</h4>
-                <h4 class="row__item2">shipping</h4>
-                <h4 class="row__item2">ACTION</h4>
-                <h4 class="row__item2">Subtotal</h4>
-            </div>
-            <div class="row">
-                <div class="row__item">
-                    <div class="clothes-link">
-                        <a href="#"><img src="../img/shopping-cart/jacket01.jpg" alt="photo"></a>
-                        <div class="clothes-feature">
-                            <h4><a href="#">Mango People T-shirt</a></h4>
-                            <div>
-                                <p>Color: <span>Red</span></p>
-                                <p>Size: <span>Xll</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row__item2 price">$150</div>
-                <div class="row__item2 price">2</div>
-                <div class="row__item2 price">FREE</div>
-                <div class="row__item2 price">$300</div>
-                <div class="row__item2 price"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row__item">
-                    <div class="clothes-link">
-                        <a href="#"><img src="../img/shopping-cart/jacket02.jpg" alt="photo"></a>
-                        <div class="clothes-feature">
-                            <h4><a href="#">Mango People T-shirt</a></h4>
-                            <div>
-                                <p class="feature-color">Color: <span>Red</span></p>
-                                <p class="feature-size">Size: <span>Xll</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row__item2 price">$150</div>
-                <div class="row__item2 price">2</div>
-                <div class="row__item2 price">FREE</div>
-                <div class="row__item2 price">$300</div>
-                <div class="row__item2 price"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row__item">
-                    <div class="clothes-link">
-                        <a href="#"><img src="../img/shopping-cart/jacket03.jpg" alt="photo"></a>
-                        <div class="clothes-feature">
-                            <h4><a href="#">Mango People T-shirt</a></h4>
-                            <div>
-                                <p class="feature-color">Color: <span>Red</span></p>
-                                <p class="feature-size">Size: <span>Xll</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row__item2 price">$150</div>
-                <div class="row__item2 price">2</div>
-                <div class="row__item2 price">FREE</div>
-                <div class="row__item2 price">$300</div>
-                <div class="row__item2 price"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </main>
-    </section>
-    <section class="container shopping-link-cart">
-        <div class="shopping-link">
-            <a href="#">cLEAR SHOPPING CART</a>
-            <a href="#">cONTINUE sHOPPING</a>
-        </div>
-        <form action="url">
-            <div class="adress">
-                <h3>Shipping Adress</h3>
-                <div>
-                    <label>
-                        <input type="text" list="bangladesh" name="Bangladesh" placeholder="Bangladesh">
-                    </label>
-                    <datalist id="bangladesh">
-                        <option value="meghalaya">Bangladesh</option>
-                        <option value="manipur">Russia</option>
-                        <option value="west bengal">U.S.A</option>
-                    </datalist>
-                </div>
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="Postcode / Zip">
-                <a href="#">get a quote</a>
-            </div>
-            <div class="coupon">
-                <h3>coupon discount</h3>
-                <p>Enter your coupon code if you have one</p>
-                <input type="text" placeholder="State">
-                <a href="#">Apply coupon</a>
-            </div>
-            <div class="total">
-                <p>Sub total <span>$900</span></p>
-                <h3>GRAND TOTAL <span>$900</span></h3>
-                <button>proceed to checkout</button>
-            </div>
-        </form>
-    </section>
+
     <section class="subscribe">
         <div class="container">
             <div class="sbsc-content">
@@ -313,7 +206,7 @@
             <nav class="nav-about-us">
                 <div class="about-us-information">
                     <h3><a href="#">COMPANY</a></h3>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="#">Shop</a>
                     <a href="#">About</a>
                     <a href="#">How It Works</a>

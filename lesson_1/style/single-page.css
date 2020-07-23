@@ -40,13 +40,13 @@ button:active {
   margin: 0 auto;
   width: 1145px; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, main .clothes-link, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .shopping-link-cart .shopping-link, .shopping-link-cart form, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -57,17 +57,17 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJusti, .shopping-link-cart form .adress, .shopping-link-cart form .coupon, .shopping-link-cart .total {
+.flexColumnJusti {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, main .clothes-link .clothes-feature, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .shopping-link-cart .shopping-link a, .shopping-link-cart form .adress a, .shopping-link-cart form .coupon a {
+.flexJustAlignCenter {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -325,13 +325,13 @@ button:active {
         .container .menu .menu-woman .menu-drop-down .menu-dr-dn-column a:active {
           color: #222222; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, main .clothes-link, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .shopping-link-cart .shopping-link, .shopping-link-cart form, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -342,17 +342,17 @@ button:active {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJusti, .shopping-link-cart form .adress, .shopping-link-cart form .coupon, .shopping-link-cart .total {
+.flexColumnJusti {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, main .clothes-link .clothes-feature, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .shopping-link-cart .shopping-link a, .shopping-link-cart form .adress a, .shopping-link-cart form .coupon a {
+.flexJustAlignCenter {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -376,199 +376,13 @@ button:active {
       .way_background .way h3 span {
         color: #f16d7f; }
 
-main {
-  height: 504px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  main .row {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e6e6e6; }
-    main .row h4 {
-      color: #222222;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: -0.2px; }
-    main .row .row__item {
-      display: flex;
-      align-items: center;
-      flex: 4 0 0; }
-      main .row .row__item a i:hover {
-        color: #f16d7f; }
-    main .row .row__item2 {
-      flex: 1 0 0;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      main .row .row__item2 a i {
-        height: 15px;
-        color: #c7c7c7; }
-    main .row .price {
-      color: #4a4a4a;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 20px; }
-  main .clothes-link {
-    width: 278px; }
-    main .clothes-link a img {
-      width: 100px;
-      height: 115px;
-      margin-top: 22px; }
-    main .clothes-link a:hover {
-      opacity: 0.5; }
-    main .clothes-link a:active {
-      opacity: 0.9; }
-    main .clothes-link .clothes-feature h4 a {
-      color: #222222; }
-    main .clothes-link .clothes-feature div {
-      margin-top: 38px; }
-      main .clothes-link .clothes-feature div p {
-        width: 75px;
-        height: 20px;
-        margin: 0;
-        color: #4a4a4a;
-        font-weight: 400;
-        font-size: 13px; }
-        main .clothes-link .clothes-feature div p span {
-          font-weight: 300;
-          color: #a4a4a4; }
-
-.shopping-link-cart .shopping-link {
-  color: #4a4a4a;
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 45px;
-  margin-bottom: 63px;
-  outline: none; }
-  .shopping-link-cart .shopping-link a {
-    width: 225px;
-    height: 50px;
-    border: 1px solid #e1e1e1;
-    background-color: #ffffff;
-    color: #222222;
-    flex-direction: row;
-    text-transform: uppercase; }
-    .shopping-link-cart .shopping-link a:hover {
-      background-color: #f16d7f; }
-    .shopping-link-cart .shopping-link a:active {
-      color: #fbfbfb; }
-
-.shopping-link-cart form {
-  margin-bottom: 80px; }
-  .shopping-link-cart form .adress {
-    height: 268px; }
-    .shopping-link-cart form .adress h3 {
-      color: #222222;
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase; }
-    .shopping-link-cart form .adress input {
-      width: 355px;
-      height: 45px;
-      border: 1px solid #e6e6e6;
-      background-color: #ffffff;
-      color: #a4a4a4;
-      font-size: 13px;
-      font-weight: 300;
-      padding-left: 18px; }
-      .shopping-link-cart form .adress input:focus {
-        outline: #e6e6e6; }
-    .shopping-link-cart form .adress a {
-      width: 100px;
-      height: 35px;
-      border: 1px solid #e6e6e6;
-      background-color: #ffffff;
-      color: #4a4a4a;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase; }
-      .shopping-link-cart form .adress a:hover {
-        background-color: #f16d7f; }
-      .shopping-link-cart form .adress a:active {
-        color: #f5f3f3; }
-  .shopping-link-cart form .coupon {
-    height: 184px;
-    outline: none;
-    border: none; }
-    .shopping-link-cart form .coupon h3 {
-      text-transform: uppercase; }
-    .shopping-link-cart form .coupon p {
-      color: #222222;
-      font-size: 14px;
-      font-weight: 300; }
-    .shopping-link-cart form .coupon input {
-      width: 355px;
-      height: 45px;
-      border: 1px solid #e6e6e6;
-      background-color: #ffffff;
-      color: #c7c7c7;
-      font-size: 13px;
-      font-weight: 300;
-      padding-left: 18px; }
-      .shopping-link-cart form .coupon input:focus {
-        outline: none; }
-    .shopping-link-cart form .coupon a {
-      width: 118px;
-      height: 35px;
-      border: 1px solid #e6e6e6;
-      background-color: #ffffff;
-      color: #4a4a4a;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase; }
-      .shopping-link-cart form .coupon a:hover {
-        background-color: #f16d7f; }
-      .shopping-link-cart form .coupon a:active {
-        color: #fbfbfb; }
-
-.shopping-link-cart .total {
-  align-items: flex-end;
-  width: 317px;
-  height: 132px;
-  background-color: #f5f3f3;
-  padding-top: 40px;
-  padding-bottom: 42px;
-  padding-right: 42px; }
-  .shopping-link-cart .total p {
-    color: #4a4a4a;
-    font-size: 11px;
-    font-weight: 400;
-    text-transform: uppercase; }
-  .shopping-link-cart .total h3 {
-    color: #222222;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 22px;
-    width: 273px;
-    text-align: right; }
-    .shopping-link-cart .total h3 span {
-      color: #f16d7f; }
-  .shopping-link-cart .total button {
-    width: 273px;
-    height: 50px;
-    background-color: #f16d7f;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    outline: none;
-    border: none; }
-    .shopping-link-cart .total button:active {
-      outline: none;
-      border: none; }
-
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, main .clothes-link, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .shopping-link-cart .shopping-link, .shopping-link-cart form, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -579,17 +393,17 @@ main {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJusti, .shopping-link-cart form .adress, .shopping-link-cart form .coupon, .shopping-link-cart .total {
+.flexColumnJusti {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, main .clothes-link .clothes-feature, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .shopping-link-cart .shopping-link a, .shopping-link-cart form .adress a, .shopping-link-cart form .coupon a {
+.flexJustAlignCenter {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -677,13 +491,13 @@ main {
       .subscribe .sbsc-content .sbsc-right button:hover {
         background-color: #c7c7c7; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, main .clothes-link, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .shopping-link-cart .shopping-link, .shopping-link-cart form, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -694,17 +508,17 @@ main {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJusti, .shopping-link-cart form .adress, .shopping-link-cart form .coupon, .shopping-link-cart .total {
+.flexColumnJusti {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, main .clothes-link .clothes-feature, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .shopping-link-cart .shopping-link a, .shopping-link-cart form .adress a, .shopping-link-cart form .coupon a {
+.flexJustAlignCenter {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -757,13 +571,13 @@ main {
         .about-us .nav-about-us .about-us-information a:hover {
           color: #f16d7f; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, main .clothes-link, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.flexRowJusti, .shopping-link-cart .shopping-link, .shopping-link-cart form, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -774,17 +588,17 @@ main {
   justify-content: space-between;
   align-items: center; }
 
-.flexColumnJusti, .shopping-link-cart form .adress, .shopping-link-cart form .coupon, .shopping-link-cart .total {
+.flexColumnJusti {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, main .clothes-link .clothes-feature, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .shopping-link-cart .shopping-link a, .shopping-link-cart form .adress a, .shopping-link-cart form .coupon a {
+.flexJustAlignCenter {
   display: flex;
   justify-content: center;
   align-items: center; }
