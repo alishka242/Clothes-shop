@@ -312,13 +312,14 @@
             &:hover .menu-drop-down {
                 @extend .flexRow;
                 align-items: flex-start;
+                z-index: 999;
             }
 
             .menu-drop-down {
                 display: none;
                 position: absolute;
                 width: 846px;
-                height: 310px;
+                height: 352px;
                 border: 1px solid $borderColor;
                 border-radius: 5px;
                 background-color: $lightBckgColor;
