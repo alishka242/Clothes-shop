@@ -51,7 +51,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -186,8 +186,19 @@ button:active {
       align-items: center;
       justify-content: center;
       outline: none; }
-      .container .main .main-right .my_account a {
-        color: #ffffff; }
+      .container .main .main-right .my_account .my-account-link {
+        color: #ffffff;
+        outline: none; }
+        .container .main .main-right .my_account .my-account-link:focus .my-account-cart {
+          position: absolute;
+          width: 262px;
+          height: 440px;
+          border: 1px solid #e1e1e1;
+          border-radius: 5px;
+          background-color: #ffffff;
+          top: 38px;
+          left: -30px;
+          padding: 20px 15px 20px 17px; }
       .container .main .main-right .my_account:hover {
         cursor: pointer;
         background-color: #a4a4a4; }
@@ -257,7 +268,7 @@ button:active {
         border: 1px solid #e1e1e1;
         border-radius: 5px;
         background-color: #ffffff;
-        top: 38px;
+        top: 53px;
         left: -30px;
         padding: 20px 15px 20px 17px; }
 
@@ -336,7 +347,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -400,7 +411,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -484,7 +495,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -599,7 +610,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -688,7 +699,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -803,7 +814,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -883,7 +894,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -150,8 +150,21 @@
                 justify-content: center;
                 outline: none;
 
-                a {
+                .my-account-link {
                     color: $lightBckgColor;
+                    outline: none;
+                    &:focus .my-account-cart {
+                        @extend .flexColumn;
+                        position: absolute;
+                        width: 262px;
+                        height: 440px;
+                        border: 1px solid $borderColor;
+                        border-radius: 5px;
+                        background-color: $lightBckgColor;
+                        top: 38px;
+                        left: -30px;
+                        padding: 20px 15px 20px 17px;
+                    }
                 }
 
                 &:hover {
@@ -261,7 +274,7 @@
                     border: 1px solid $borderColor;
                     border-radius: 5px;
                     background-color: $lightBckgColor;
-                    top: 38px;
+                    top: 53px;
                     left: -30px;
                     padding: 20px 15px 20px 17px;
                 }

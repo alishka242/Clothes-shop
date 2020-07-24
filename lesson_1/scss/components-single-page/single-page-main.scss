@@ -1,0 +1,14 @@
+@import '../constants/colorAndFlex';
+
+main {
+    background-color: #f7f7f7;
+
+    .carousel-item {
+
+        img {
+            width: 597px!important;
+            height: 724px;
+        }
+    }
+
+}
