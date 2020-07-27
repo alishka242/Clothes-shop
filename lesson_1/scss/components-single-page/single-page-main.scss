@@ -41,8 +41,8 @@ article {
     height: 730px;
     padding: 0px 250px;
     margin: 0px;
-    border: 1px solid #eaeaea;
-    background-color: #ffffff;
+    border: 1px solid $baseFooterColor;
+    background-color: $lightBckgColor;
 
     .pr-desc-header {
         height: 180px;
@@ -54,7 +54,7 @@ article {
 
         h4 {
             margin-bottom: 14px;
-            color: #f16d7f;
+            color: $baseBtnColor;
             font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
@@ -62,7 +62,7 @@ article {
 
 
         h3 {
-            color: #4d4d4d;
+            color: $darkGray;
             font-size: 18px;
             font-weight: 400;
             line-height: 24px;
@@ -74,7 +74,7 @@ article {
     }
 
     p {
-        color: #5e5e5e;
+        color: $darkGray;
         font-size: 14px;
         font-weight: 300;
         line-height: 24px;
@@ -93,13 +93,13 @@ article {
         .sing-pr-desc-line_slim {
             width: 74px;
             height: 1px;
-            background-color: #eaeaea;
+            background-color: $baseFooterColor;
             display: flex;
             justify-content: center;
             outline: none;
 
             &:hover {
-                background-color: #5e5e5e;
+                background-color: $darkGray;
             }
         }
 
@@ -107,7 +107,7 @@ article {
             position: absolute;
             height: 3px;
             width: 63px;
-            background-color: #ef5b70;
+            background-color: $baseBtnColor;
             left: 42px;
         }
 
@@ -120,13 +120,13 @@ article {
         width: 334px;
 
         p {
-            color: #b9b9b9;
+            color: $moreTextColor;
             font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
 
             span {
-                color: #2f2f2f;
+                color: $colorDarkGrayH5;
                 font-size: 14px;
                 text-transform: uppercase;
             }
@@ -134,7 +134,7 @@ article {
     }
 
     span {
-        color: #ef5b70;
+        color: $baseBtnColor;
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
@@ -144,7 +144,7 @@ article {
     .single-pr-desc-line {
         height: 1px;
         width: 642px;
-        border: 1px solid #eaeaea;
+        border: 1px solid $baseFooterColor;
         margin-bottom: 63px;
     }
 
@@ -162,7 +162,7 @@ article {
             align-items: flex-start;
 
             h5 {
-                color: #2f2f2f;
+                color: $colorDarkGrayH5;
                 font-size: 14px;
                 font-weight: 700;
                 line-height: 24px;
@@ -173,8 +173,8 @@ article {
             input {
                 width: 144px;
                 height: 35px;
-                border: 1px solid #eaeaea;
-                background-color: #ffffff;
+                border: 1px solid $baseFooterColor;
+                background-color: $lightBckgColor;
                 padding-left: 15px;
                 outline: none;
             }
@@ -184,19 +184,19 @@ article {
     button {
         width: 537px;
         height: 55px;
-        border: 1px solid #ef5b70;
-        background-color: #ffffff;
-        color: #ef5b70;
+        border: 1px solid $baseBtnColor;
+        background-color: $lightBckgColor;
+        color: $baseBtnColor;
         margin-top: 28px;
 
         &:hover {
-            background-color: #ef5b70;
-            color: #ffffff;
+            background-color: $baseBtnColor;
+            color: $lightBckgColor;
         }
 
         &:active {
-            background-color: #5e5e5e;
-            border: #5e5e5e;
+            background-color: $darkGray;
+            border: $darkGray;
         }
     }
 }
@@ -204,7 +204,7 @@ article {
 .single-galary {
 
     h2 {
-        color: #4d4d4d;
+        color: $darkGray;
         font-size: 24px;
         font-weight: 700;
         line-height: 20px;

@@ -51,7 +51,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -186,8 +186,19 @@ button:active {
       align-items: center;
       justify-content: center;
       outline: none; }
-      .container .main .main-right .my_account a {
-        color: #ffffff; }
+      .container .main .main-right .my_account .my-account-link {
+        color: #ffffff;
+        outline: none; }
+        .container .main .main-right .my_account .my-account-link:focus .my-account-cart {
+          position: absolute;
+          width: 262px;
+          height: 440px;
+          border: 1px solid #e1e1e1;
+          border-radius: 5px;
+          background-color: #ffffff;
+          top: 38px;
+          left: -30px;
+          padding: 20px 15px 20px 17px; }
       .container .main .main-right .my_account:hover {
         cursor: pointer;
         background-color: #a4a4a4; }
@@ -257,7 +268,7 @@ button:active {
         border: 1px solid #e1e1e1;
         border-radius: 5px;
         background-color: #ffffff;
-        top: 38px;
+        top: 53px;
         left: -30px;
         padding: 20px 15px 20px 17px; }
 
@@ -281,12 +292,13 @@ button:active {
   .container .menu .menu-woman a {
     position: relative; }
   .container .menu .menu-woman:hover .menu-drop-down {
-    align-items: flex-start; }
+    align-items: flex-start;
+    z-index: 999; }
   .container .menu .menu-woman .menu-drop-down {
     display: none;
     position: absolute;
     width: 846px;
-    height: 310px;
+    height: 352px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
     background-color: #ffffff;
@@ -336,7 +348,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -435,6 +447,38 @@ main {
         main .clothes-link .clothes-feature div p span {
           font-weight: 300;
           color: #a4a4a4; }
+
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, main .clothes-link, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexRowJusti, .shopping-link-cart .shopping-link, .shopping-link-cart form, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexColumnJusti, .shopping-link-cart form .adress, .shopping-link-cart form .coupon, .shopping-link-cart .total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.flexColumnJustAround, main .clothes-link .clothes-feature, .about-us .about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.flexJustAlignCenter, .shopping-link-cart .shopping-link a, .shopping-link-cart form .adress a, .shopping-link-cart form .coupon a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .shopping-link-cart .shopping-link {
   color: #4a4a4a;
@@ -573,7 +617,7 @@ main {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -688,7 +732,7 @@ main {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -768,7 +812,7 @@ main {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -815,10 +859,11 @@ footer {
         font-weight: 400; }
         footer .footer .footer-link a i {
           width: 32px;
-          height: 25px;
+          height: 32px;
           background-color: #ffffff;
-          text-align: center;
-          padding-top: 8px; }
+          display: flex;
+          align-items: center;
+          justify-content: center; }
           footer .footer .footer-link a i:hover {
             color: #ffffff;
             background-color: #f16d7f; }

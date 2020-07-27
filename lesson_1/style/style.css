@@ -292,12 +292,13 @@ button:active {
   .container .menu .menu-woman a {
     position: relative; }
   .container .menu .menu-woman:hover .menu-drop-down {
-    align-items: flex-start; }
+    align-items: flex-start;
+    z-index: 999; }
   .container .menu .menu-woman .menu-drop-down {
     display: none;
     position: absolute;
     width: 846px;
-    height: 310px;
+    height: 352px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
     background-color: #ffffff;
@@ -517,7 +518,7 @@ button:active {
   align-items: center; }
 
 .fetured-items-conteuner {
-  margin-bottom: 113px; }
+  margin-top: 119px; }
   .fetured-items-conteuner .fetured-items {
     height: 51px;
     margin-bottom: 60px; }
@@ -543,14 +544,16 @@ button:active {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 279px;
+        height: 280px;
         width: 263px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        width: 260px;
+        height: 280px; }
         .fetured-items-conteuner .ftr-product .clothes a img {
           display: block;
           z-index: 0;
-          width: 261px;
-          height: 279px; }
+          width: 260px;
+          height: 280px; }
         .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover {
           position: absolute;
           display: none;
@@ -595,9 +598,13 @@ button:active {
     background-color: #f16d7f;
     color: #ffffff;
     font-size: 15px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 113px; }
     .fetured-items-conteuner .all-products a:hover {
       background-color: #c7c7c7; }
+
+.container {
+  padding: 0px; }
 
 .flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
@@ -941,10 +948,11 @@ footer {
         font-weight: 400; }
         footer .footer .footer-link a i {
           width: 32px;
-          height: 25px;
+          height: 32px;
           background-color: #ffffff;
-          text-align: center;
-          padding-top: 8px; }
+          display: flex;
+          align-items: center;
+          justify-content: center; }
           footer .footer .footer-link a i:hover {
             color: #ffffff;
             background-color: #f16d7f; }

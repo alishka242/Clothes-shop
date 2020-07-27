@@ -33,8 +33,9 @@ footer {
                     width: 32px;
                     height: 32px;
                     background-color: $lightBckgColor;
-                    text-align: center;
-                    padding-top: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     &:hover {
                         color: $lightBckgColor;
                         background-color: $baseBtnColor;
