@@ -136,7 +136,6 @@ button:active {
       height: 38px;
       border-radius: 3px;
       font-size: 14px;
-      border-radius: 3px;
       border: 1px solid #e6e6e6; }
       .container .main .main-left .search .browse {
         font-weight: 300;
@@ -203,14 +202,17 @@ button:active {
         width: 36px;
         height: 38px;
         padding: 0px;
-        color: #a4a4a4;
         outline: none;
         cursor: pointer;
         background: none; }
+        .container .main .main-left .search .search_loupe i {
+          color: #a4a4a4; }
         .container .main .main-left .search .search_loupe:hover {
           background-color: #a4a4a4; }
         .container .main .main-left .search .search_loupe:hover i {
-          color: #e6e6e6; }
+          color: white;
+          transform: rotateY(360deg) scale(1.2);
+          transition: 1s; }
   .container .main .main-right {
     width: 188px;
     position: relative; }
@@ -220,6 +222,9 @@ button:active {
       .container .main .main-right .basket i:hover {
         cursor: pointer;
         color: #a4a4a4; }
+    .container .main .main-right .basket:hover {
+      transform: scale(1.5);
+      transition: 0.5s; }
     .container .main .main-right .my_account {
       width: 130px;
       height: 38px;
@@ -415,9 +420,46 @@ button:active {
 
 .way_background {
   background-color: #f8f3f4; }
+
+@-webkit-keyframes hanger {
+  0% {
+    left: 0px;
+    top: 20px; }
+  30% {
+    left: 300px;
+    top: 80px; }
+  60% {
+    left: 700px;
+    top: 20px; }
+  100% {
+    left: 1050px;
+    top: 80px; } }
+
+@keyframes hanger {
+  0% {
+    left: 0px;
+    top: 20px; }
+  30% {
+    left: 300px;
+    top: 80px; }
+  60% {
+    left: 700px;
+    top: 20px; }
+  100% {
+    left: 1050px;
+    top: 80px; } }
   .way_background .way {
     height: 148px;
-    margin-bottom: 90px; }
+    margin-bottom: 90px;
+    position: relative; }
+    .way_background .way img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+      z-index: 0;
+      -webkit-animation: hanger  5s infinite alternate;
+      animation: hanger  5s infinite alternate; }
     .way_background .way h2 {
       color: #f16d7f;
       font-size: 24px;

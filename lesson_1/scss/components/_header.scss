@@ -105,17 +105,24 @@
                     width: 36px;
                     height: 38px;
                     padding: 0px;
-                    color: $lightGray;
+
                     outline: none;
                     cursor: pointer;
                     background: none;
 
+                    i {
+                        color: $lightGray;
+                    }
+
                     &:hover {
                         background-color: $lightGray;
+                        
                     }
 
                     &:hover i {
-                        color: $baseFooterColor;
+                        color: white;
+                        transform: rotateY(360deg) scale(1.2);
+                        transition: 1s;
                     }
                 }
             }
@@ -136,6 +143,11 @@
                         color: $lightGray;
                     }
                 }
+
+                &:hover {
+                    transform: scale(1.5);
+                    transition: 0.5s;
+                }
             }
 
             .my_account {
@@ -152,6 +164,7 @@
                 .my-account-link {
                     color: $lightBckgColor;
                     outline: none;
+
                     &:focus .my-account-cart {
                         @extend .flexColumn;
                         position: absolute;
