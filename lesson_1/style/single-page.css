@@ -40,7 +40,7 @@ button:active {
   margin: 0 auto;
   width: 1145px; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,7 +51,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,12 +62,12 @@ button:active {
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -337,7 +337,7 @@ button:active {
         .container .menu .menu-woman .menu-drop-down .menu-dr-dn-column a:active {
           color: #222222; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -348,7 +348,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -359,133 +359,220 @@ button:active {
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.container_color {
-  background-color: #e8e8e8; }
-  .container_color .the-brand {
-    height: 613px;
-    background-image: url("../img/2_the-brand/the-brand.jpg");
-    background-repeat: no-repeat;
+.way_background {
+  background-color: #f8f3f4; }
+  .way_background .way {
+    height: 148px;
+    margin-bottom: 90px; }
+    .way_background .way h2 {
+      color: #f16d7f;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .way_background .way h3 {
+      color: #636363;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase; }
+      .way_background .way h3 span {
+        color: #f16d7f; }
+
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.flexColumnJusti {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.flexColumnJustAround, .about-us .about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+a:hover {
+  text-decoration: none;
+  border: none; }
+
+main {
+  background-color: #f7f7f7; }
+  main .carousel-item img {
+    width: 597px !important;
+    height: 724px; }
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 1280px; }
+
+.product-description {
+  position: absolute;
+  top: -80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1142px;
+  height: 730px;
+  padding: 0px 250px;
+  margin: 0px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff; }
+  .product-description .pr-desc-header {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 73px 0px 67px; }
+    .product-description .pr-desc-header h4 {
+      margin-bottom: 14px;
+      color: #f16d7f;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .product-description .pr-desc-header h3 {
+      color: #4a4a4a;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0px;
+      margin-top: 17px;
+      text-transform: uppercase; }
+  .product-description p {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    width: 618px; }
+  .product-description .single-paggination {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center; }
-    .container_color .the-brand .color-line {
-      width: 12px;
-      height: 95px;
+    .product-description .single-paggination .sing-pr-desc-line_slim {
+      width: 74px;
+      height: 1px;
+      background-color: #e6e6e6;
+      display: flex;
+      justify-content: center;
+      outline: none; }
+      .product-description .single-paggination .sing-pr-desc-line_slim:hover {
+        background-color: #4a4a4a; }
+    .product-description .single-paggination .sing-pr-desc-line_bold {
+      position: absolute;
+      height: 3px;
+      width: 63px;
       background-color: #f16d7f;
-      margin-right: 12px; }
-    .container_color .the-brand .brand-text {
-      height: 100px;
+      left: 42px; }
+  .product-description .single-pr-desc-charact-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 334px; }
+    .product-description .single-pr-desc-charact-up p {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
+      .product-description .single-pr-desc-charact-up p span {
+        color: #2f2f2f;
+        font-size: 14px;
+        text-transform: uppercase; }
+  .product-description span {
+    color: #f16d7f;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 21px 0px 43px; }
+  .product-description .single-pr-desc-line {
+    height: 1px;
+    width: 642px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 63px; }
+  .product-description .single-pr-desc-charact-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 538px; }
+    .product-description .single-pr-desc-charact-down div {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-top: -24px; }
-      .container_color .the-brand .brand-text h1 {
-        color: #222222;
-        font-size: 60px;
+      align-items: flex-start; }
+      .product-description .single-pr-desc-charact-down div h5 {
+        color: #2f2f2f;
+        font-size: 14px;
         font-weight: 700;
+        line-height: 24px;
         text-transform: uppercase; }
-      .container_color .the-brand .brand-text h2 {
-        font-size: 40px; }
-        .container_color .the-brand .brand-text h2 .brand-h2_color {
-          color: #f16d7f; }
-
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
-
-.flexColumnJusti {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.for {
-  height: 1020px; }
-  .for a {
-    flex-direction: column;
-    width: 175px;
-    height: 82px;
+      .product-description .single-pr-desc-charact-down div input {
+        width: 144px;
+        height: 35px;
+        border: 1px solid #e6e6e6;
+        background-color: #ffffff;
+        padding-left: 15px;
+        outline: none; }
+  .product-description button {
+    width: 537px;
+    height: 55px;
+    border: 1px solid #f16d7f;
     background-color: #ffffff;
-    font-weight: 700;
-    margin-top: 26px; }
-    .for a:hover {
-      box-shadow: 5px 0px 8px 1px rgba(0, 0, 0, 0.5); }
-    .for a .for_center {
-      text-align: left; }
-      .for a .for_center .for_white-box {
-        display: block;
-        text-transform: uppercase;
-        color: #222222;
-        font-size: 18px; }
-      .for a .for_center .for_color-text {
-        display: block;
-        text-transform: uppercase;
-        color: #f16d7f;
-        font-size: 29px; }
-  .for .for-left {
-    height: 823px; }
-    .for .for-left .for-men {
-      background-image: url("../img/3_for/for-men.jpg");
-      background-repeat: no-repeat;
-      width: 560px;
-      height: 542px; }
-    .for .for-left .accesories {
-      background-image: url("../img/3_for/accesories.jpg");
-      background-repeat: no-repeat;
-      background-color: #dadad2;
-      background-position: top right;
-      width: 560px;
-      height: 261px; }
-      .for .for-left .accesories a {
-        width: 225px; }
-  .for .for-right {
-    height: 823px; }
-    .for .for-right .for-women {
-      background-image: url("../img/3_for/for-women.jpg");
-      background-repeat: no-repeat;
-      width: 560px;
-      height: 261px; }
-    .for .for-right .for-kids {
-      background-image: url("../img/3_for/for-kids.jpg");
-      background-repeat: no-repeat;
-      width: 560px;
-      height: 542px; }
+    color: #f16d7f;
+    margin-top: 28px; }
+    .product-description button:hover {
+      background-color: #f16d7f;
+      color: #ffffff; }
+    .product-description button:active {
+      background-color: #4a4a4a;
+      border: #4a4a4a; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.single-galary h2 {
+  color: #4a4a4a;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0px 0px 52px;
+  text-transform: uppercase; }
+
+.single-galary .ftr-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; }
+
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -496,7 +583,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -507,12 +594,12 @@ button:active {
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -606,7 +693,7 @@ button:active {
 .container {
   padding: 0px; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -617,7 +704,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -628,101 +715,12 @@ button:active {
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.sale {
-  display: flex;
-  flex-direction: row;
-  background-color: #222222;
-  height: 529px;
-  margin-bottom: 97px; }
-  .sale .sale-left {
-    background-image: url("../img/5_sale/sale.jpg");
-    background-repeat: no-repeat;
-    width: 727px;
-    height: 383px;
-    color: #ffffff;
-    padding-top: 146px;
-    padding-left: 40px; }
-    .sale .sale-left h2 {
-      font-size: 54px;
-      font-weight: 700;
-      text-transform: uppercase; }
-      .sale .sale-left h2 .sale-left_color {
-        color: #f16d7f; }
-    .sale .sale-left h3 {
-      font-size: 32px; }
-  .sale .sale-right {
-    align-items: center;
-    width: 373px;
-    color: #fbfbfb; }
-    .sale .sale-right .sale-plus {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 373px; }
-      .sale .sale-right .sale-plus:nth-child(1) img {
-        width: 45px;
-        height: 32px; }
-      .sale .sale-right .sale-plus:nth-child(2) img {
-        width: 40px;
-        height: 40px; }
-      .sale .sale-right .sale-plus:nth-child(3) img {
-        width: 47px;
-        height: 35px; }
-      .sale .sale-right .sale-plus .sale-plus-text {
-        width: 220px;
-        display: flex;
-        flex-direction: column; }
-        .sale .sale-right .sale-plus .sale-plus-text a {
-          font-size: 20px;
-          font-weight: 700;
-          padding-bottom: 17px;
-          cursor: pointer; }
-          .sale .sale-right .sale-plus .sale-plus-text a:hover {
-            color: #f16d7f; }
-        .sale .sale-right .sale-plus .sale-plus-text p {
-          font-size: 14px;
-          font-family: 'Roboto-Thin';
-          line-height: 20px;
-          color: #ffffff; }
-
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.flexRowJusti, .subscribe .sbsc-content .sbsc-left, .about-us, footer .footer .footer-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
-
-.flexColumnJusti {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -810,7 +808,7 @@ button:active {
       .subscribe .sbsc-content .sbsc-right button:hover {
         background-color: #c7c7c7; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -821,7 +819,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -832,12 +830,12 @@ button:active {
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -890,7 +888,7 @@ button:active {
         .about-us .nav-about-us .about-us-information a:hover {
           color: #f16d7f; }
 
-.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .for, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
+.flexRow, .container .main, .container .main .main-left, .container .main .main-left .logo a, .container .main .main-right, .container .main .main-right .my_account .my-account-cart .selected-item, .container .main .main-right .my_account .my-account-cart .total, .container .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -901,7 +899,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .for .for-left, .for .for-right, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .main .main-right .my_account .my-account-link:focus .my-account-cart, .container .main .main-right .my_account .my-account-cart .selected-item div, .container .main .main-right .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -912,12 +910,12 @@ button:active {
   flex-direction: column;
   justify-content: space-between; }
 
-.flexColumnJustAround, .sale .sale-right, .about-us .about-us-text {
+.flexColumnJustAround, .about-us .about-us-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.flexJustAlignCenter, .for a, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
+.flexJustAlignCenter, .fetured-items-conteuner .all-products, .fetured-items-conteuner .all-products a {
   display: flex;
   justify-content: center;
   align-items: center; }

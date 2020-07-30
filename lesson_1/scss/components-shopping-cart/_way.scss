@@ -1,0 +1,31 @@
+@import "../constants/colorAndFlex";
+
+.way_background {
+    background-color: #f8f3f4;
+
+    .way {
+        @extend .flexRow;
+        height: 148px;
+        margin-bottom: 90px;
+
+        h2 {
+            color: $baseBtnColor;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #636363;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+
+            span {
+                color: $baseBtnColor;
+            }
+        }
+    }
+
+}
