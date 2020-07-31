@@ -174,22 +174,23 @@
             justify-content: center;
             outline: none;
 
+            &:focus-within .my-account-cart {
+                @extend .flexColumn;
+                position: absolute;
+                z-index: 99;
+                width: 262px;
+                height: 440px;
+                border: 1px solid $borderColor;
+                border-radius: 5px;
+                background-color: $lightBckgColor;
+                top: 38px;
+                left: -30px;
+                padding: 20px 15px 20px 17px;
+            }
+
             .my-account-link {
                 color: $lightBckgColor;
                 outline: none;
-
-                &:focus .my-account-cart {
-                    @extend .flexColumn;
-                    position: absolute;
-                    width: 262px;
-                    height: 440px;
-                    border: 1px solid $borderColor;
-                    border-radius: 5px;
-                    background-color: $lightBckgColor;
-                    top: 38px;
-                    left: -30px;
-                    padding: 20px 15px 20px 17px;
-                }
             }
 
             &:hover {
