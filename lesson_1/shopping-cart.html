@@ -12,8 +12,8 @@
 
 <body>
     <header class="container">
-        <div class="main">
-            <div class="main-left">
+        <div class="header">
+            <div class="header-search">
                 <div class="logo">
                     <a href="index.html">
                         <img src="img/1_header/logo.png" alt="logo">
@@ -22,10 +22,12 @@
                     </a>
                 </div>
                 <div class="search">
-                    <button class="browse">
-                        Browse
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                        <div class="browsw-nav">
+                    <div class="browse">
+                        <button class="browse-btn">
+                            Browse
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="browse-nav">
                             <a href="#">
                                 <h3>Women</h3>
                             </a>
@@ -48,13 +50,15 @@
                             <a href="#">Blazers</a>
                             <a href="#">Jackets/vests</a>
                         </div>
-                    </button><input type="text" placeholder="Search for Item..."><button class="search_loupe">
+                    </div>
+                    <input type="text" placeholder="Search for Item...">
+                    <button class="search_loupe">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-            <div class="main-right">
-                <a href="#" class="basket">
+            <div class="header-account">
+                <a href="shopping-cart.html" class="basket">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
                 <div class="my_account" tabindex="0">
@@ -80,7 +84,7 @@
                             <a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
                         </div>
                         <div class="selected-item">
-                            <a href="#"><img src="img/1_header/item-2.jpg" alt="photo"></a>
+                            <a href="#"><img src="../img/1_header/item-2.jpg" alt="photo"></a>
                             <div>
                                 <p><a href="#" class="item-name">Rebox Zane</a></p>
                                 <p class="item-stars">
@@ -103,12 +107,11 @@
                         <button class="checkout-btn">Checkout</button>
                         <button class="go-to-cart-btn">Go to cart</button>
                     </div>
-
                 </div>
             </div>
         </div>
-        <nav class="menu container">
-            <a href="index.html" class="menu-section">Home</a>
+        <nav class="menu">
+            <a href="#" class="menu-section">Home</a>
             <a href="#" class="menu-section">Man</a>
             <div class="menu-woman">
                 <a href="#" class="menu-section">Women</a>
@@ -142,7 +145,7 @@
                         <a href="#">Tops</a>
                         <a href="#">Sweaters/Knits</a>
                         <a href="#">Jackets/Coats</a>
-                        <img src="img/1_header/menu-sale.png" alt="photo">
+                        <img src="../img/1_header/menu-sale.png" alt="photo">
                     </div>
                 </div>
             </div>
@@ -159,7 +162,7 @@
             <h3>Home / Men / <span>New Arrivals</span></h3>
         </div>
     </section>
-    <section class="container">
+    <div class="container">
         <main>
             <div class="row">
                 <h4 class="row__item">Product Details</h4>
@@ -230,8 +233,8 @@
                 </div>
             </div>
         </main>
-    </section>
-    <section class="container shopping-link-cart">
+    </div>
+    <aside class="container shopping-link-cart">
         <div class="shopping-link">
             <a href="#">cLEAR SHOPPING CART</a>
             <a href="#">cONTINUE sHOPPING</a>
@@ -265,8 +268,8 @@
                 <button>proceed to checkout</button>
             </div>
         </form>
-    </section>
-    <section class="subscribe">
+    </aside>
+    <aside class="subscribe">
         <div class="container">
             <div class="sbsc-content">
                 <div class="sbsc-left">
@@ -292,12 +295,12 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container">
+    </aside>
+    <aside class="container">
         <div class="about-us">
             <div class="about-us-text">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="#">
                         <img src="img/1_header/logo.png" alt="logo">
                         <span>BRAN<span class="logo-text_color">D</span>
                         </span>
@@ -338,8 +341,7 @@
                 </div>
             </nav>
         </div>
-    </section>
-    <footer>
+    </aside>    <footer>
         <div class="container">
             <div class="footer">
                 <p><a href="#">&copy; 2017 Brand All Rights Reserved.</a></p>

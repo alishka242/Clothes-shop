@@ -2,7 +2,6 @@
 
 .way_background {
     background-color: #f8f3f4;
-
     @keyframes hanger {
         0% {
             left: 0px;
@@ -24,7 +23,7 @@
             top: 80px;
         }
     }
-
+    
     .way {
         @extend .flexRow;
         height: 148px;

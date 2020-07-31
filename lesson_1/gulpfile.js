@@ -7,10 +7,10 @@ const sourcemaps 	= require('gulp-sourcemaps');
 
 /* ------------ Styles compile ------------- */
 gulp.task('styles:compile', function () {
-	return gulp.src('./scss/style.scss') /*файл содержащий импорты и лежащий в scss*/
+	return gulp.src('./scss/single-page.scss') /*файл содержащий импорты и лежащий в scss*/
 		.pipe(sourcemaps.init())
 		.pipe(sass())
-		.pipe(rename('style.css'))
+		.pipe(rename('single-page.css'))
 		.pipe(autoprefixer({
 			cascade: false
 		}))
