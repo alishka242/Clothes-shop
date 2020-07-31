@@ -1,27 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto-Regular', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-button:active,
-a:active {
-    opacity: 0.8;
-}
-
-button:focus,
-button:active {
-    outline: none;
-}
-
-.container {
-    margin: 0 auto;
-    width: 1145px;
-}
+@import '../fonts/font';
+@import '../constants/colorAndFlex';
+@import '../constants/logo';
+@import '../components/start-value';
+@import '../components/header';
+@import '../components/way';
+@import '../components/fetured-items';
+@import '../components/subscribe';
+@import '../components/about-us';
+@import '../components/footer';

@@ -1,9 +1,5 @@
-@import './fonts/font';
-@import './base/base';
-@import './components/header';
-@import './components-shopping-cart/way';
-@import './components-single-page/single-page-main.scss';
-@import './components/main-index/fetured-items';
-@import './components/subscribe';
-@import './components/about-us';
-@import './components/footer';
+@import 'base/base';
+.search{
+    height: 40px !important;
+}
+@import 'components/components-single-page/single-page-main.scss';

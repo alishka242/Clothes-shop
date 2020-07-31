@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping cart</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style/checkout-page.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style/font-awesome.min.css">
-    <link rel="stylesheet" href="style/shopping-cart.css">
 </head>
 
 <body>
@@ -162,113 +162,108 @@
             <h3>Home / Men / <span>New Arrivals</span></h3>
         </div>
     </section>
-    <div class="container">
-        <main>
-            <div class="row">
-                <h4 class="row__item">Product Details</h4>
-                <h4 class="row__item2">unite Price</h4>
-                <h4 class="row__item2">Quantity</h4>
-                <h4 class="row__item2">shipping</h4>
-                <h4 class="row__item2">ACTION</h4>
-                <h4 class="row__item2">Subtotal</h4>
-            </div>
-            <div class="row">
-                <div class="row__item">
-                    <div class="clothes-link">
-                        <a href="#"><img src="img/shopping-cart/jacket01.jpg" alt="photo"></a>
-                        <div class="clothes-feature">
-                            <h4><a href="#">Mango People T-shirt</a></h4>
-                            <div>
-                                <p>Color: <span>Red</span></p>
-                                <p>Size: <span>Xll</span></p>
-                            </div>
-                        </div>
+    <main class="container">
+        <div class="ch-slide">
+            <input type="radio" name="ch-rad" id="ch-1" class="ch-input hide">
+            <label for="ch-1">1. Shipping Adress</label>
+            <div class="ch-info">
+                <form action="#" class="form-first">
+                    <div>
+                        <h3>Check as a guest or register</h3>
+                        <h4>Register with us for future convenience</h4>
                     </div>
-                </div>
-                <div class="row__item2 price">$150</div>
-                <div class="row__item2 price">2</div>
-                <div class="row__item2 price">FREE</div>
-                <div class="row__item2 price">$300</div>
-                <div class="row__item2 price"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row__item">
-                    <div class="clothes-link">
-                        <a href="#"><img src="img/shopping-cart/jacket02.jpg" alt="photo"></a>
-                        <div class="clothes-feature">
-                            <h4><a href="#">Mango People T-shirt</a></h4>
-                            <div>
-                                <p class="feature-color">Color: <span>Red</span></p>
-                                <p class="feature-size">Size: <span>Xll</span></p>
-                            </div>
-                        </div>
+                    <div class="inpute-regist">
+                        <label for="inp-reg-1">
+                            <input type="radio" id="inp-reg-1" name="regist" required>
+                            <span>checkout as guest</span>
+                        </label>
+                        <label for="inp-reg-2">
+                            <input type="radio" id="inp-reg-2" name="regist" required>
+                            <span>register</span>
+                        </label>
                     </div>
-                </div>
-                <div class="row__item2 price">$150</div>
-                <div class="row__item2 price">2</div>
-                <div class="row__item2 price">FREE</div>
-                <div class="row__item2 price">$300</div>
-                <div class="row__item2 price"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row__item">
-                    <div class="clothes-link">
-                        <a href="#"><img src="img/shopping-cart/jacket03.jpg" alt="photo"></a>
-                        <div class="clothes-feature">
-                            <h4><a href="#">Mango People T-shirt</a></h4>
-                            <div>
-                                <p class="feature-color">Color: <span>Red</span></p>
-                                <p class="feature-size">Size: <span>Xll</span></p>
-                            </div>
-                        </div>
+                    <div>
+                        <h3>register and save time!</h3>
+                        <h4>Register with us for future convenience</h4>
                     </div>
-                </div>
-                <div class="row__item2 price">$150</div>
-                <div class="row__item2 price">2</div>
-                <div class="row__item2 price">FREE</div>
-                <div class="row__item2 price">$300</div>
-                <div class="row__item2 price"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                </div>
+                    <div>
+                        <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true">&nbsp;</i>
+                            Fast and easy checkout
+                        </a>
+                        <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true">&nbsp;</i>
+                            Easy access to your order history and status
+                        </a>
+                    </div>
+                    <button>Continue</button>
+                </form>
+                <form action="#">
+                    <div>
+                        <h3>Already registed?</h3>
+                        <h4>Please log in below</h4>
+                    </div>
+                    <div class="required-input">
+                        <h3>EMAIL ADDRESS <sup><i class="fa fa-asterisk" aria-hidden="true"></i></sup></h3>
+                        <input type="email" required>
+                    </div>
+                    <div class="required-input">
+                        <h3>PASSWORD <sup><i class="fa fa-asterisk" aria-hidden="true"></i></sup></h3>
+                        <input type="password" required>
+                    </div>
+                    <a class="req-fileds"><sup><i class="fa fa-asterisk" aria-hidden="true"></i></sup> Required
+                        Fileds</a>
+                    <div class="form-two-link">
+                        <button>Log in</button>
+                        <a>Forgot Password?</a>
+                    </div>
+                </form>
             </div>
-        </main>
-    </div>
-    <aside class="container shopping-link-cart">
-        <div class="shopping-link">
-            <a href="#">cLEAR SHOPPING CART</a>
-            <a href="#">cONTINUE sHOPPING</a>
         </div>
-        <form action="url">
-            <div class="adress">
-                <h3>Shipping Adress</h3>
-                <div>
-                    <label>
-                        <input type="text" list="bangladesh" name="Bangladesh" placeholder="Bangladesh">
-                    </label>
-                    <datalist id="bangladesh">
-                        <option value="meghalaya">Bangladesh</option>
-                        <option value="manipur">Russia</option>
-                        <option value="west bengal">U.S.A</option>
-                    </datalist>
-                </div>
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="Postcode / Zip">
-                <a href="#">get a quote</a>
+        <div class="ch-slide">
+            <input type="radio" name="ch-rad" id="ch-2" class="ch-input hide">
+            <label for="ch-2">2. BILLING INFORMATION</label>
+            <div class="ch-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium reprehenderit animi
+                corrupti magnam unde sapiente ducimus, molestiae fuga voluptatibus nihil soluta rerum velit debitis.
+                Veniam maxime expedita quis sint?
             </div>
-            <div class="coupon">
-                <h3>coupon discount</h3>
-                <p>Enter your coupon code if you have one</p>
-                <input type="text" placeholder="State">
-                <a href="#">Apply coupon</a>
+        </div>
+        <div class="ch-slide">
+            <input type="radio" name="ch-rad" id="ch-3" class="ch-input hide">
+            <label for="ch-3">3. SHIPPING INFORMATION</label>
+            <div class="ch-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores unde magnam officia beatae veritatis.
+                Voluptate quis, placeat reiciendis eius aliquam ipsam enim ab aut quam laboriosam consequatur quae
+                ducimus. Aliquid?
             </div>
-            <div class="total">
-                <p>Sub total <span>$900</span></p>
-                <h3>GRAND TOTAL <span>$900</span></h3>
-                <button>proceed to checkout</button>
+        </div>
+        <div class="ch-slide">
+            <input type="radio" name="ch-rad" id="ch-4" class="ch-input hide">
+            <label for="ch-4">4. SHIPPING METHOD</label>
+            <div class="ch-info">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam odit unde sint ipsum nisi, corporis
+                magni rerum mollitia et eum repellat aut beatae repudiandae eveniet excepturi dolorum ullam iste
+                molestiae?
             </div>
-        </form>
-    </aside>
+        </div>
+        <div class="ch-slide">
+            <input type="radio" name="ch-rad" id="ch-5" class="ch-input hide">
+            <label for="ch-5">5. PAYMENT METHOD</label>
+            <div class="ch-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquam enim iste laborum dignissimos
+                tempore, numquam hic similique commodi repudiandae unde reprehenderit facere dolorum magni qui earum
+                doloribus, inventore facilis.
+            </div>
+        </div>
+        <div class="ch-slide">
+            <input type="radio" name="ch-rad" id="ch-6" class="ch-input hide">
+            <label for="ch-6">6. ORDER REVIEW</label>
+            <div class="ch-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos ratione minus quae impedit quo
+                repudiandae, perspiciatis tenetur odit modi quas soluta optio sapiente facilis harum officiis cum autem
+                pariatur.
+            </div>
+        </div>
+    </main>
     <aside class="subscribe">
         <div class="container">
             <div class="sbsc-content">
@@ -341,7 +336,8 @@
                 </div>
             </nav>
         </div>
-    </aside>    <footer>
+    </aside>
+    <footer>
         <div class="container">
             <div class="footer">
                 <p><a href="#">&copy; 2017 Brand All Rights Reserved.</a></p>
@@ -355,6 +351,15 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

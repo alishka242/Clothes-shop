@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/single-page.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style/font-awesome.min.css">
 </head>
 
 <body>
     <header class="container">
-        <div class="main">
-            <div class="main-left">
+        <div class="header">
+            <div class="header-search">
                 <div class="logo">
                     <a href="index.html">
                         <img src="img/1_header/logo.png" alt="logo">
@@ -24,10 +24,12 @@
                     </a>
                 </div>
                 <div class="search">
-                    <button class="browse">
-                        Browse
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                        <div class="browsw-nav">
+                    <div class="browse">
+                        <button class="browse-btn">
+                            Browse
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="browse-nav">
                             <a href="#">
                                 <h3>Women</h3>
                             </a>
@@ -50,12 +52,14 @@
                             <a href="#">Blazers</a>
                             <a href="#">Jackets/vests</a>
                         </div>
-                    </button><input type="text" placeholder="Search for Item..."><button class="search_loupe">
+                    </div>
+                    <input type="text" placeholder="Search for Item...">
+                    <button class="search_loupe">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-            <div class="main-right">
+            <div class="header-account">
                 <a href="shopping-cart.html" class="basket">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
@@ -108,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <nav class="menu container">
+        <nav class="menu">
             <a href="#" class="menu-section">Home</a>
             <a href="#" class="menu-section">Man</a>
             <div class="menu-woman">
@@ -153,12 +157,13 @@
             <a href="#" class="menu-section">Hot Deals</a>
         </nav>
     </header>
-    <section class="way_background">
+    <aside class="way_background">
         <div class="container way">
+            <img src="img/checkout-page/hanger.png" alt="hanger" id="hanger">
             <h2>New Arrivals </h2>
             <h3>Home / Men / <span>New Arrivals</span></h3>
         </div>
-    </section>
+    </aside>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 777px; margin-top: -90px;
     border-top: 1px solid #eaeaea ;">
@@ -223,10 +228,9 @@
                             <input type="text" list="choose-color" name="choose-color" placeholder="Red">
                         </label>
                         <datalist id="choose-color">
-                            <option><i class="fa fa-square" aria-hidden="true"></i>Red</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>Black</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>Yellow
-                            </option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
                         </datalist>
                     </div>
                 </div>
@@ -237,12 +241,12 @@
                             <input type="text" list="choose-size" name="choose-size" placeholder="XXL">
                         </label>
                         <datalist id="choose-size">
-                            <option><i class="fa fa-square" aria-hidden="true"></i>XXL</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>XL</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>L</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>M</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>S</option>
-                            <option><i class="fa fa-square" aria-hidden="true"></i>XS</option>
+                            <option>XXL</option>
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>M</option>
+                            <option>S</option>
+                            <option>XS</option>
                         </datalist>
                     </div>
                 </div>
@@ -310,12 +314,11 @@
             </div>
         </div>
     </article>
-
-    <section class="subscribe">
+    <aside class="subscribe">
         <div class="container">
             <div class="sbsc-content">
                 <div class="sbsc-left">
-                    <img src="../img/6_subscribe/woman.png" alt="photo">
+                    <img src="img/6_subscribe/woman.png" alt="photo">
                     <div>
                         <p class="sbsc-text">
                             <i>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
@@ -337,13 +340,13 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container">
+    </aside>
+    <aside class="container">
         <div class="about-us">
             <div class="about-us-text">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="../img/1_header/logo.png" alt="logo">
+                        <img src="img/1_header/logo.png" alt="logo">
                         <span>BRAN<span class="logo-text_color">D</span>
                         </span>
                     </a>
@@ -359,7 +362,7 @@
             <nav class="nav-about-us">
                 <div class="about-us-information">
                     <h3><a href="#">COMPANY</a></h3>
-                    <a href="index.html">Home</a>
+                    <a href="#">Home</a>
                     <a href="#">Shop</a>
                     <a href="#">About</a>
                     <a href="#">How It Works</a>
@@ -383,7 +386,7 @@
                 </div>
             </nav>
         </div>
-    </section>
+    </aside>
     <footer>
         <div class="container">
             <div class="footer">
