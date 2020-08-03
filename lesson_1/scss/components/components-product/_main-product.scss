@@ -86,6 +86,18 @@ main {
                 flex-wrap: wrap;
                 justify-content: space-between;
 
+                label {
+                    input {
+                        display: none;
+                    }
+                    &:checked {
+                        color: #ef5b70;
+                    }
+                    &:hover{
+                        color: #ef5b70;
+                    }
+                }
+
                 .span-border {
                     border-right: 1px solid #dfdfdf;
                     border-left: 1px solid #dfdfdf;
@@ -94,16 +106,16 @@ main {
             }
 
             .cont-size {
-                width: 334px;
+                width: 336px;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: flex-start;
                 flex-wrap: wrap;
 
 
                 span {
-                    padding-right: 46px;
-                    text-align: center;
+                    display: inline-block;
+                    width: 84px;
 
                     input {
                         margin-right: 9px;
@@ -121,6 +133,7 @@ main {
         }
 
         .cont-tuning {
+            margin-top: 40px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -141,6 +154,7 @@ main {
                 input {
                     padding-left: 5px;
                     width: 46px;
+                    cursor: pointer;
                 }
 
                 span,
@@ -198,6 +212,61 @@ main {
                     position: absolute;
                     left: 64px;
                 }
+            }
+        }
+    }
+
+    .clothes-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 110px;
+
+        .cl-nav-number {
+            width: 231px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                color: #c4c4c4;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 26px;
+                font-weight: 300;
+
+                &:hover {
+                    color: #ef5b70;
+                }
+            }
+        }
+
+        .cl-nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 44px;
+            border-radius: 3px;
+            border: 1px solid #ef5b70;
+            background-color: #ffffff;
+
+            a {
+                color: #ef5b70;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 26px;
+                font-weight: 300;
+            }
+
+            &:hover {
+                background-color: #ef5b70;
+            }
+
+            &:hover a {
+                color: #ffffff;
             }
         }
     }

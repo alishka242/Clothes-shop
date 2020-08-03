@@ -985,19 +985,25 @@ main {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between; }
+      main .main-contant aside .trend-now label input {
+        display: none; }
+      main .main-contant aside .trend-now label:checked {
+        color: #ef5b70; }
+      main .main-contant aside .trend-now label:hover {
+        color: #ef5b70; }
       main .main-contant aside .trend-now .span-border {
         border-right: 1px solid #dfdfdf;
         border-left: 1px solid #dfdfdf;
         padding: 0px 7%; }
     main .main-contant aside .cont-size {
-      width: 334px;
+      width: 336px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-wrap: wrap; }
       main .main-contant aside .cont-size span {
-        padding-right: 46px;
-        text-align: center; }
+        display: inline-block;
+        width: 84px; }
         main .main-contant aside .cont-size span input {
           margin-right: 9px; }
     main .main-contant .cont-character {
@@ -1005,6 +1011,7 @@ main {
       flex-direction: row;
       justify-content: space-between; }
     main .main-contant .cont-tuning {
+      margin-top: 40px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -1020,7 +1027,8 @@ main {
           height: 30px; }
         main .main-contant .cont-tuning div input {
           padding-left: 5px;
-          width: 46px; }
+          width: 46px;
+          cursor: pointer; }
         main .main-contant .cont-tuning div span,
         main .main-contant .cont-tuning div input {
           outline: none;
@@ -1059,6 +1067,45 @@ main {
         main .main-contant .cont-tuning div:first-child + div input {
           position: absolute;
           left: 64px; }
+  main .clothes-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 110px; }
+    main .clothes-nav .cl-nav-number {
+      width: 231px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      main .clothes-nav .cl-nav-number a {
+        color: #c4c4c4;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 26px;
+        font-weight: 300; }
+        main .clothes-nav .cl-nav-number a:hover {
+          color: #ef5b70; }
+    main .clothes-nav .cl-nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 44px;
+      border-radius: 3px;
+      border: 1px solid #ef5b70;
+      background-color: #ffffff; }
+      main .clothes-nav .cl-nav-link a {
+        color: #ef5b70;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 26px;
+        font-weight: 300; }
+      main .clothes-nav .cl-nav-link:hover {
+        background-color: #ef5b70; }
+      main .clothes-nav .cl-nav-link:hover a {
+        color: #ffffff; }
 
 .fetured-items-conteuner {
   margin-top: 119px; }
