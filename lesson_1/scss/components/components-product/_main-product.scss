@@ -1,0 +1,273 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .main-nav {
+        width: 237px;
+
+        .pr-nav {
+
+            label {
+                height: 37px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                border-left: 5px solid #ef5b70;
+                border-bottom: 1px solid #ebebeb;
+                padding-left: 11px;
+                margin-bottom: 18px;
+
+                &:hover {
+                    color: #ef5b70;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    color: #4a4a4a;
+                }
+            }
+
+            .pr-input,
+            .pr-input+label+div {
+                display: none;
+            }
+
+            .pr-input:checked+label+div {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    color: #6f6e6e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 33px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #b3b2b2;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-contant {
+        width: 847px;
+
+        aside {
+            h4 {
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+
+            span {
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+
+            }
+
+            .trend-now {
+                width: 176px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                label {
+                    input {
+                        display: none;
+                    }
+                    &:checked {
+                        color: #ef5b70;
+                    }
+                    &:hover{
+                        color: #ef5b70;
+                    }
+                }
+
+                .span-border {
+                    border-right: 1px solid #dfdfdf;
+                    border-left: 1px solid #dfdfdf;
+                    padding: 0px 7%;
+                }
+            }
+
+            .cont-size {
+                width: 336px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+
+                span {
+                    display: inline-block;
+                    width: 84px;
+
+                    input {
+                        margin-right: 9px;
+                    }
+
+                }
+            }
+        }
+
+        .cont-character {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .cont-tuning {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 10px;
+            width: 846px;
+            height: 50px;
+            background-color: #f3f3f3;
+
+            div {
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    width: 66px;
+                    height: 30px;
+                }
+
+                input {
+                    padding-left: 5px;
+                    width: 46px;
+                    cursor: pointer;
+                }
+
+                span,
+                input {
+                    outline: none;
+                    color: #6f6e6e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 30px;
+                    border: 1px solid #ebebeb;
+                    background-color: #ffffff;
+                }
+            }
+
+            div:first-child {
+                margin-right: 100px;
+                position: relative;
+
+                input {
+                    position: absolute;
+                    left: 65px;
+                    width: 87px;
+                    text-decoration: none;
+                }
+
+                label {
+                    .fa {
+                        position: absolute;
+                        left: 144px;
+                        top: 9px;
+                        background-color: #ffffff;
+                        color: #6f6e6e;
+                    }
+                }
+            }
+
+            div:first-child+div {
+                position: relative;
+
+                label {
+                    .fa {
+                        position: absolute;
+                        left: 102px;
+                        top: 9px;
+                        background-color: #ffffff;
+                        color: #6f6e6e;
+                    }
+                }
+
+                input {
+                    position: absolute;
+                    left: 64px;
+                }
+            }
+        }
+    }
+
+    .clothes-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 110px;
+
+        .cl-nav-number {
+            width: 231px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                color: #c4c4c4;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 26px;
+                font-weight: 300;
+
+                &:hover {
+                    color: #ef5b70;
+                }
+            }
+        }
+
+        .cl-nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 44px;
+            border-radius: 3px;
+            border: 1px solid #ef5b70;
+            background-color: #ffffff;
+
+            a {
+                color: #ef5b70;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 26px;
+                font-weight: 300;
+            }
+
+            &:hover {
+                background-color: #ef5b70;
+            }
+
+            &:hover a {
+                color: #ffffff;
+            }
+        }
+    }
+}
