@@ -930,7 +930,7 @@ footer {
   .sale-product-backg .sale-product {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 340px; }
     .sale-product-backg .sale-product .sale-plus {
