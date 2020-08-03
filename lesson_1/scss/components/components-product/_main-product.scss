@@ -1,0 +1,185 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .main-nav {
+        width: 237px;
+
+        .pr-nav {
+
+            label {
+                height: 37px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                border-left: 5px solid #ef5b70;
+                border-bottom: 1px solid #ebebeb;
+                padding-left: 11px;
+                margin-bottom: 18px;
+
+                &:hover {
+                    color: #ef5b70;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    color: #4a4a4a;
+                }
+            }
+
+            .pr-input,
+            div {
+                display: none;
+            }
+
+            &:hover div {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    color: #6f6e6e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 33px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #b3b2b2;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-contant {
+        width: 847px;
+
+        aside {
+            h4 {
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+
+            span {
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+
+            }
+
+            .trend-now {
+                width: 176px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .span-border {
+                    border-right: 1px solid #dfdfdf;
+                    border-left: 1px solid #dfdfdf;
+                    padding: 0px 7%;
+                }
+            }
+
+            .cont-size {
+                width: 334px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+
+                span {
+                    padding-right: 46px;
+                    text-align: center;
+
+                    input {
+                        margin-right: 9px;
+                    }
+
+                }
+            }
+        }
+
+        .cont-character {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .cont-tuning {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 10px;
+            width: 846px;
+            height: 50px;
+            background-color: #f3f3f3;
+
+            div {
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    width: 64px;
+                    height: 28px;
+                }
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 46px;
+                }
+            }
+
+            div:first-child {
+                margin-right: 97px;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    left: 65px;
+                    width: 87px;
+                }
+            }
+
+            div:first-child + div{
+                position: relative;
+                button{
+                    position: absolute;
+                    left: 64px;
+                }
+            }
+
+            span,
+            button {
+                outline: none;
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 66px;
+                height: 30px;
+                border: 1px solid #ebebeb;
+                background-color: #ffffff;
+            }
+        }
+    }
+}

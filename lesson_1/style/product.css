@@ -925,6 +925,220 @@ footer {
           line-height: 20px;
           color: #ffffff; }
 
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  main .main-nav {
+    width: 237px; }
+    main .main-nav .pr-nav label {
+      height: 37px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: #6f6e6e;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      border-left: 5px solid #ef5b70;
+      border-bottom: 1px solid #ebebeb;
+      padding-left: 11px;
+      margin-bottom: 18px; }
+      main .main-nav .pr-nav label:hover {
+        color: #ef5b70;
+        cursor: pointer; }
+      main .main-nav .pr-nav label:active {
+        color: #4a4a4a; }
+    main .main-nav .pr-nav .pr-input,
+    main .main-nav .pr-nav div {
+      display: none; }
+    main .main-nav .pr-nav:hover div {
+      display: flex;
+      flex-direction: column; }
+      main .main-nav .pr-nav:hover div a {
+        color: #6f6e6e;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+        cursor: pointer; }
+        main .main-nav .pr-nav:hover div a:hover {
+          color: #b3b2b2; }
+  main .main-contant {
+    width: 847px; }
+    main .main-contant aside h4 {
+      color: #6f6e6e;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 25px; }
+    main .main-contant aside span {
+      color: #6f6e6e;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px; }
+    main .main-contant aside .trend-now {
+      width: 176px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      main .main-contant aside .trend-now .span-border {
+        border-right: 1px solid #dfdfdf;
+        border-left: 1px solid #dfdfdf;
+        padding: 0px 7%; }
+    main .main-contant aside .cont-size {
+      width: 334px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      main .main-contant aside .cont-size span {
+        padding-right: 46px;
+        text-align: center; }
+        main .main-contant aside .cont-size span input {
+          margin-right: 9px; }
+    main .main-contant .cont-character {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    main .main-contant .cont-tuning {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 10px;
+      width: 846px;
+      height: 50px;
+      background-color: #f3f3f3; }
+      main .main-contant .cont-tuning div {
+        display: flex;
+        flex-direction: row; }
+        main .main-contant .cont-tuning div span {
+          width: 64px;
+          height: 28px; }
+        main .main-contant .cont-tuning div button {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 46px; }
+      main .main-contant .cont-tuning div:first-child {
+        margin-right: 97px;
+        position: relative; }
+        main .main-contant .cont-tuning div:first-child button {
+          position: absolute;
+          left: 65px;
+          width: 87px; }
+      main .main-contant .cont-tuning div:first-child + div {
+        position: relative; }
+        main .main-contant .cont-tuning div:first-child + div button {
+          position: absolute;
+          left: 64px; }
+      main .main-contant .cont-tuning span,
+      main .main-contant .cont-tuning button {
+        outline: none;
+        color: #6f6e6e;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66px;
+        height: 30px;
+        border: 1px solid #ebebeb;
+        background-color: #ffffff; }
+
+.fetured-items-conteuner {
+  margin-top: 119px; }
+  .fetured-items-conteuner .fetured-items {
+    height: 51px;
+    margin-bottom: 60px; }
+    .fetured-items-conteuner .fetured-items h3 {
+      color: #222222;
+      font-size: 30px;
+      font-weight: 700; }
+    .fetured-items-conteuner .fetured-items p {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 400; }
+  .fetured-items-conteuner .ftr-product {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px; }
+    .fetured-items-conteuner .ftr-product .clothes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .fetured-items-conteuner .ftr-product .clothes a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280px;
+        width: 263px;
+        text-transform: uppercase;
+        width: 260px;
+        height: 280px; }
+        .fetured-items-conteuner .ftr-product .clothes a img {
+          display: block;
+          z-index: 0;
+          width: 260px;
+          height: 280px; }
+        .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover {
+          position: absolute;
+          display: none;
+          width: 263px;
+          height: 281px;
+          background-color: #4a4a4a;
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 400;
+          opacity: 0.8; }
+          .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 123px;
+            height: 37px;
+            border: 1px solid #ffffff;
+            text-transform: lowercase; }
+            .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover p:hover {
+              background-color: #e6e6e6;
+              color: #4a4a4a; }
+      .fetured-items-conteuner .ftr-product .clothes .clothers-p .ftr-name {
+        color: #222222;
+        font-size: 13px;
+        margin-top: 19px; }
+      .fetured-items-conteuner .ftr-product .clothes .clothers-p .ftr-price {
+        color: #f16d7f;
+        font-size: 16px; }
+      .fetured-items-conteuner .ftr-product .clothes p {
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-left: 15px; }
+      .fetured-items-conteuner .ftr-product .clothes:hover .ftr-product_hover {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .fetured-items-conteuner .ftr-product .clothes:hover .clothers-p {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .fetured-items-conteuner .all-products a {
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 113px; }
+    .fetured-items-conteuner .all-products a:hover {
+      background-color: #c7c7c7; }
+
+.container {
+  padding: 0px; }
+
 .sale-product-backg {
   background-color: #222222; }
   .sale-product-backg .sale-product {
