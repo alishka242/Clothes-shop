@@ -35,11 +35,11 @@ main {
             }
 
             .pr-input,
-            div {
+            .pr-input+label+div {
                 display: none;
             }
 
-            &:hover div {
+            .pr-input:checked+label+div {
                 display: flex;
                 flex-direction: column;
 
@@ -134,51 +134,70 @@ main {
                 flex-direction: row;
 
                 span {
-                    width: 64px;
-                    height: 28px;
+                    width: 66px;
+                    height: 30px;
                 }
 
-                button {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
+                input {
+                    padding-left: 5px;
                     width: 46px;
+                }
+
+                span,
+                input {
+                    outline: none;
+                    color: #6f6e6e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 30px;
+                    border: 1px solid #ebebeb;
+                    background-color: #ffffff;
                 }
             }
 
             div:first-child {
-                margin-right: 97px;
+                margin-right: 100px;
                 position: relative;
 
-                button {
+                input {
                     position: absolute;
                     left: 65px;
                     width: 87px;
+                    text-decoration: none;
+                }
+
+                label {
+                    .fa {
+                        position: absolute;
+                        left: 144px;
+                        top: 9px;
+                        background-color: #ffffff;
+                        color: #6f6e6e;
+                    }
                 }
             }
 
-            div:first-child + div{
+            div:first-child+div {
                 position: relative;
-                button{
+
+                label {
+                    .fa {
+                        position: absolute;
+                        left: 102px;
+                        top: 9px;
+                        background-color: #ffffff;
+                        color: #6f6e6e;
+                    }
+                }
+
+                input {
                     position: absolute;
                     left: 64px;
                 }
-            }
-
-            span,
-            button {
-                outline: none;
-                color: #6f6e6e;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 26px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 66px;
-                height: 30px;
-                border: 1px solid #ebebeb;
-                background-color: #ffffff;
             }
         }
     }

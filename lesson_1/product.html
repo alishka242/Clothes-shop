@@ -165,7 +165,7 @@
     <main class="container">
         <div class="main-nav">
             <div class="pr-nav">
-                <input type="radio" id="pr-01" class="pr-input">
+                <input type="radio" name="pr-navig" id="pr-01" class="pr-input">
                 <label for="pr-01">Category <i class="fa fa-caret-down" aria-hidden="true"></i></label>
                 <div>
                     <a>Accessories</a>
@@ -184,17 +184,21 @@
                 </div>
             </div>
             <div class="pr-nav">
-                <input type="radio" id="pr-02" class="pr-input">
+                <input type="radio" id="pr-02" class="pr-input" name="pr-navig">
                 <label for="pr-02">BRAND <i class="fa fa-caret-down" aria-hidden="true"></i></label>
                 <div class="pr-info">
-
+                    <a>Accessories</a>
+                    <a>Bags</a>
+                    <a>Denim</a>
                 </div>
             </div>
             <div class="pr-nav">
-                <input type="radio" id="pr-03" class="pr-input">
+                <input type="radio" id="pr-03" class="pr-input" name="pr-navig">
                 <label for="pr-03">dESIGNER <i class="fa fa-caret-down" aria-hidden="true"></i></label>
                 <div class="pr-info">
-
+                    <a>Accessories</a>
+                    <a>Bags</a>
+                    <a>Denim</a>
                 </div>
             </div>
         </div>
@@ -232,13 +236,31 @@
             <div class="cont-tuning">
                 <div>
                     <span>Sort By</span>
-                    <button>Name&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                    <div></div>
+                    <div>
+                        <input type="text" list="sort" id="sort-inp" placeholder="Name" required>
+                        <label id="sort-inp">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </label>
+                        <datalist id="sort">
+                            <option>08</option>
+                            <option>07</option>
+                            <option>06</option>
+                        </datalist>
+                    </div>
                 </div>
                 <div>
                     <span>Show</span>
-                    <button>09&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                    <div></div>
+                    <div>
+                        <input type="text" list="show" id="show" placeholder="09" required>
+                        <label id="show">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </label>
+                        <datalist id="show">
+                            <option>08</option>
+                            <option>07</option>
+                            <option>06</option>
+                        </datalist>
+                    </div>
                 </div>
             </div>
             <div class="fetured-items-conteuner">

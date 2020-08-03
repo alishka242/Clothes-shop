@@ -952,18 +952,18 @@ main {
       main .main-nav .pr-nav label:active {
         color: #4a4a4a; }
     main .main-nav .pr-nav .pr-input,
-    main .main-nav .pr-nav div {
+    main .main-nav .pr-nav .pr-input + label + div {
       display: none; }
-    main .main-nav .pr-nav:hover div {
+    main .main-nav .pr-nav .pr-input:checked + label + div {
       display: flex;
       flex-direction: column; }
-      main .main-nav .pr-nav:hover div a {
+      main .main-nav .pr-nav .pr-input:checked + label + div a {
         color: #6f6e6e;
         font-size: 14px;
         font-weight: 400;
         line-height: 33px;
         cursor: pointer; }
-        main .main-nav .pr-nav:hover div a:hover {
+        main .main-nav .pr-nav .pr-input:checked + label + div a:hover {
           color: #b3b2b2; }
   main .main-contant {
     width: 847px; }
@@ -1016,39 +1016,49 @@ main {
         display: flex;
         flex-direction: row; }
         main .main-contant .cont-tuning div span {
-          width: 64px;
-          height: 28px; }
-        main .main-contant .cont-tuning div button {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
+          width: 66px;
+          height: 30px; }
+        main .main-contant .cont-tuning div input {
+          padding-left: 5px;
           width: 46px; }
+        main .main-contant .cont-tuning div span,
+        main .main-contant .cont-tuning div input {
+          outline: none;
+          color: #6f6e6e;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 26px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          border: 1px solid #ebebeb;
+          background-color: #ffffff; }
       main .main-contant .cont-tuning div:first-child {
-        margin-right: 97px;
+        margin-right: 100px;
         position: relative; }
-        main .main-contant .cont-tuning div:first-child button {
+        main .main-contant .cont-tuning div:first-child input {
           position: absolute;
           left: 65px;
-          width: 87px; }
+          width: 87px;
+          text-decoration: none; }
+        main .main-contant .cont-tuning div:first-child label .fa {
+          position: absolute;
+          left: 144px;
+          top: 9px;
+          background-color: #ffffff;
+          color: #6f6e6e; }
       main .main-contant .cont-tuning div:first-child + div {
         position: relative; }
-        main .main-contant .cont-tuning div:first-child + div button {
+        main .main-contant .cont-tuning div:first-child + div label .fa {
+          position: absolute;
+          left: 102px;
+          top: 9px;
+          background-color: #ffffff;
+          color: #6f6e6e; }
+        main .main-contant .cont-tuning div:first-child + div input {
           position: absolute;
           left: 64px; }
-      main .main-contant .cont-tuning span,
-      main .main-contant .cont-tuning button {
-        outline: none;
-        color: #6f6e6e;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 26px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 66px;
-        height: 30px;
-        border: 1px solid #ebebeb;
-        background-color: #ffffff; }
 
 .fetured-items-conteuner {
   margin-top: 119px; }
