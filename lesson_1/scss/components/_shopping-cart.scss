@@ -18,14 +18,14 @@
     }
     
     .way h2 {
-        color: #f16d7f;
+        color: $baseBtnColor;
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase;
     }
     
     .way h3 {
-        color: #636363;
+        color: $darkGray;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
@@ -33,7 +33,7 @@
     }
     
     .way h3 span {
-        color: #f16d7f;
+        color: $baseBtnColor;
     }
     
     main {
@@ -48,7 +48,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        color: #222222;
+        color: $baseTextColor;
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
@@ -112,7 +112,7 @@
     }
     
     .row h4 {
-        color: #222222;
+        color: $baseTextColor;
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
@@ -133,7 +133,7 @@
     }
     
     .row__item2 a i:hover {
-        color: #f16d7f;
+        color: $baseBtnColor;
     }
     
     .row__item2 i {
@@ -162,7 +162,7 @@
         flex-direction: row;
         justify-content: space-between;
         text-transform: uppercase;
-        color: #4a4a4a;
+        color: $darkGray;
         font-size: 14px;
         font-weight: 700;
         margin-top: 45px;
@@ -172,15 +172,15 @@
     .shopping-link a {
         width: 225px;
         height: 50px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
+        border: 1px solid $borderColor;
+        background-color: $lightBckgColor;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .shopping-link a:hover {
-        background-color: #f16d7f;
+        background-color: $baseBtnColor;
     }
     
     .shopping-link a:active {
@@ -195,7 +195,7 @@
     }
     
     form h3 {
-        color: #222222;
+        color: $baseTextColor;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
@@ -211,8 +211,8 @@
     .adress input {
         width: 355px;
         height: 45px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
+        border: 1px solid $borderColor;
+        background-color: $lightBckgColor;
         color: #b1b1b1;
         font-size: 13px;
         font-weight: 300;
@@ -222,9 +222,9 @@
     .adress a {
         width: 100px;
         height: 35px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #4a4a4a;
+        border: 1px solid $borderColor;
+        background-color: $lightBckgColor;
+        color: $darkGray;
         font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
@@ -234,7 +234,7 @@
     }
     
     .adress a:hover {
-        background-color: #f16d7f;
+        background-color: $baseBtnColor;
     }
     
     .adress a:active {
@@ -259,8 +259,8 @@
     .coupon input {
         width: 355px;
         height: 45px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
+        border: 1px solid $borderColor;
+        background-color: $lightBckgColor;
         color: #b1b1b1;
         font-size: 13px;
         font-weight: 300;
@@ -270,9 +270,9 @@
     .coupon a {
         width: 118px;
         height: 35px;
-        border: 1px solid #eaeaea;
-        background-color: #ffffff;
-        color: #4a4a4a;
+        border: 1px solid $borderColor;
+        background-color: $lightBckgColor;
+        color: $darkGray;
         font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
@@ -282,7 +282,7 @@
     }
     
     .coupon a:hover {
-        background-color: #f16d7f;
+        background-color: $baseBtnColor;
     }
     
     .coupon a:active {
@@ -303,14 +303,14 @@
     }
     
     .total p {
-        color: #4a4a4a;
+        color: $darkGray;
         font-size: 11px;
         font-weight: 400;
         text-transform: uppercase;
     }
     
     .total h3 {
-        color: #222222;
+        color: $baseTextColor;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
@@ -321,14 +321,14 @@
     }
     
     .total h3 span {
-        color: #f16d7f;
+        color: $baseBtnColor;
     }
     
     .total button {
         width: 273px;
         height: 50px;
-        background-color: #f16d7f;
-        color: #ffffff;
+        background-color: $baseBtnColor;
+        color: $lightBckgColor;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
