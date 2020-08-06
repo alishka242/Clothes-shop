@@ -840,7 +840,7 @@ footer {
 main {
   padding: 0px 0px 95px !important; }
   main .ch-slide {
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e6e6e6;
     padding: 30px 0px;
     /* когда чекбокс активен показываем блоки с содержанием  */ }
     main .ch-slide h3 {
@@ -857,13 +857,13 @@ main {
         main .ch-slide h3 sup i {
           color: #ff0d0d; }
     main .ch-slide h4 {
-      color: #b3b2b2;
+      color: #c7c7c7;
       font-size: 13px;
       font-weight: 400;
       line-height: 20px; }
     main .ch-slide a {
       display: block;
-      color: #b3b2b2;
+      color: #c7c7c7;
       font-size: 13px;
       font-weight: 400;
       line-height: 20px; }
@@ -878,7 +878,7 @@ main {
       font-weight: 700;
       text-transform: uppercase; }
       main .ch-slide label:hover {
-        color: #b3b2b2;
+        color: #f16d7f;
         cursor: pointer; }
       main .ch-slide label:active {
         color: #4a4a4a; }
@@ -913,7 +913,7 @@ main {
             align-items: center; }
             main .ch-slide .ch-info form .inpute-regist label input {
               margin-right: 15px;
-              background-color: black;
+              background-color: #222222;
               position: relative; }
               main .ch-slide .ch-info form .inpute-regist label input::before {
                 content: '';
@@ -924,8 +924,8 @@ main {
                 height: 13px;
                 border-radius: 50%;
                 transform: translate(-50%, -50%);
-                background-color: white;
-                border: 0.5px solid black; }
+                background-color: #ffffff;
+                border: 0.5px solid #222222; }
               main .ch-slide .ch-info form .inpute-regist label input:checked::after {
                 content: '';
                 position: absolute;
@@ -934,7 +934,7 @@ main {
                 width: 7px;
                 height: 7px;
                 border-radius: 50%;
-                background-color: black;
+                background-color: #222222;
                 transform: translate(-50%, -50%);
                 visibility: visible; }
             main .ch-slide .ch-info form .inpute-regist label span {
@@ -946,7 +946,7 @@ main {
           outline: none;
           width: 390px;
           height: 45px;
-          border: 1px solid #eaeaea;
+          border: 1px solid #e6e6e6;
           background-color: #ffffff;
           padding-left: 15px; }
         main .ch-slide .ch-info form .req-fileds {
@@ -973,14 +973,14 @@ main {
         main .ch-slide .ch-info form button {
           width: 180px;
           height: 50px;
-          border: 1px solid #eaeaea;
+          border: 1px solid #e6e6e6;
           background-color: #ffffff;
           color: #4a4a4a;
           font-size: 14px;
           font-weight: 700;
           text-transform: uppercase; }
           main .ch-slide .ch-info form button:hover {
-            background-color: #eaeaea;
+            background-color: #e6e6e6;
             cursor: pointer; }
       main .ch-slide .ch-info .form-first {
         padding-right: 239px; }
