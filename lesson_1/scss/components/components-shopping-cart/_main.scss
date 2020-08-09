@@ -50,6 +50,13 @@ main {
             font-size: 13px;
             font-weight: 400;
             line-height: 20px;
+            a{
+                i{
+                    &:hover{
+                        color: $baseBtnColor;
+                    }
+                }
+            }
         }
     }
     .clothes-link {

@@ -1,4 +1,4 @@
-.shopping-link-cart{
+.shopping-link-cart {
     .shopping-link {
         @extend .flexRowJusti;
         color: $darkGray;
@@ -19,7 +19,8 @@
             text-transform: uppercase;
 
             &:hover {
-                background-color: $baseBtnColor;
+                background-color: #c7c7c7;
+                color: #f5f3f3;
             }
 
             &:active {
@@ -53,7 +54,8 @@
                 font-size: 13px;
                 font-weight: 300;
                 padding-left: 18px;
-                &:focus{
+
+                &:focus {
                     outline: $baseFooterColor;
                 }
             }
@@ -70,7 +72,8 @@
                 @extend .flexJustAlignCenter;
 
                 &:hover {
-                    background-color: $baseBtnColor;
+                    background-color: #c7c7c7;
+                    color: #f5f3f3;
                 }
 
                 &:active {
@@ -84,8 +87,8 @@
             height: 184px;
             outline: none;
             border: none;
-            
-            h3{
+
+            h3 {
                 text-transform: uppercase;
             }
 
@@ -104,7 +107,8 @@
                 font-size: 13px;
                 font-weight: 300;
                 padding-left: 18px;
-                &:focus{
+
+                &:focus {
                     outline: none;
                 }
             }
@@ -121,7 +125,8 @@
                 @extend .flexJustAlignCenter;
 
                 &:hover {
-                    background-color: $baseBtnColor;
+                    background-color: #c7c7c7;
+                    color: #f5f3f3;
                 }
 
                 &:active {
@@ -173,6 +178,10 @@
             text-transform: uppercase;
             outline: none;
             border: none;
+
+            &:hover {
+                background-color: #c7c7c7;
+            }
 
             &:active {
                 outline: none;
