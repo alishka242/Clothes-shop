@@ -45,6 +45,7 @@
 
                         &:hover {
                             background-color: $lightGray;
+                            color: $lightBckgColor;
                         }
 
                     }
@@ -143,59 +144,28 @@
 
     .header-account {
         @extend .flexRow;
-        width: 188px;
+        width: 161.58px;
         position: relative;
 
-        .basket {
-            i {
-                font-size: 34px;
-                color: $baseTextColor;
+
+        .basket_hover {
+            padding-right: 18.42px;
+            padding-bottom: 2px;
+            .basket {
+                i {
+                    font-size: 34px;
+                    color: $baseTextColor;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $lightGray;
+                    }
+                }
 
                 &:hover {
-                    cursor: pointer;
-                    color: $lightGray;
+                    transform: scale(1.5);
+                    transition: 0.5s;
                 }
-            }
-
-            &:hover {
-                transform: scale(1.5);
-                transition: 0.5s;
-            }
-        }
-
-        .my_account {
-            width: 130px;
-            height: 38px;
-            background-color: $baseBtnColor;
-            color: $lightBckgColor;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            outline: none;
-
-            &:focus-within .my-account-cart {
-                @extend .flexColumn;
-                position: absolute;
-                z-index: 99;
-                width: 262px;
-                height: 440px;
-                border: 1px solid $borderColor;
-                border-radius: 5px;
-                background-color: $lightBckgColor;
-                top: 38px;
-                left: -30px;
-                padding: 20px 15px 20px 17px;
-            }
-
-            .my-account-link {
-                color: $lightBckgColor;
-                outline: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-                background-color: $lightGray;
             }
 
             .my-account-cart {
@@ -292,18 +262,41 @@
                 }
             }
 
-            &:focus .my-account-cart {
+            &:hover .my-account-cart {
                 @extend .flexColumn;
                 position: absolute;
+                z-index: 99;
                 width: 262px;
                 height: 440px;
                 border: 1px solid $borderColor;
                 border-radius: 5px;
                 background-color: $lightBckgColor;
-                top: 53px;
+                top: 36px;
                 left: -30px;
                 padding: 20px 15px 20px 17px;
             }
+        }
+    }
+
+    .my_account {
+        width: 130px;
+        height: 38px;
+        background-color: $baseBtnColor;
+        color: $lightBckgColor;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+
+        .my-account-link {
+            color: $lightBckgColor;
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $lightGray;
         }
     }
 }
@@ -323,7 +316,7 @@
         height: 20px;
         font-weight: 700;
         text-transform: uppercase;
-        padding: 0px 21px;
+        padding: 10px 21px;
 
         &:hover {
             opacity: 0.7;
@@ -349,9 +342,10 @@
             border: 1px solid $borderColor;
             border-radius: 5px;
             background-color: $lightBckgColor;
-            top: 137px;
-            left: 490px;
+            top: 144px;
+            left: 315px;
             padding: 20px 25px;
+            padding-top: 5px;
 
             .menu-dr-dn-column {
                 display: flex;

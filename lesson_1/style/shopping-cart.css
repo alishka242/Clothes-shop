@@ -18,7 +18,7 @@
   font-family: 'Roboto-Thin';
   src: url("../fonts/Roboto-Thin.ttf"); }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .my_account .my-account-cart .selected-item, .container .header-account .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .my_account:focus-within .my-account-cart, .container .header-account .my_account .my-account-cart .selected-item div, .container .header-account .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +84,7 @@ button:active {
   margin: 0 auto;
   width: 1145px; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .my_account .my-account-cart .selected-item, .container .header-account .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,7 +95,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .my_account:focus-within .my-account-cart, .container .header-account .my_account .my-account-cart .selected-item div, .container .header-account .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,7 +158,8 @@ button:active {
           .container .header .header-search .search .browse .browse-btn:active {
             background-color: #a4a4a4; }
           .container .header .header-search .search .browse .browse-btn:hover {
-            background-color: #a4a4a4; }
+            background-color: #a4a4a4;
+            color: #ffffff; }
         .container .header .header-search .search .browse .browse-nav {
           display: none;
           padding-left: 10px;
@@ -224,28 +225,80 @@ button:active {
           transition: 1s; }
 
 .container .header-account {
-  width: 188px;
+  width: 161.58px;
   position: relative; }
-  .container .header-account .basket i {
-    font-size: 34px;
-    color: #222222; }
-    .container .header-account .basket i:hover {
-      cursor: pointer;
-      color: #a4a4a4; }
-  .container .header-account .basket:hover {
-    transform: scale(1.5);
-    transition: 0.5s; }
-  .container .header-account .my_account {
-    width: 130px;
-    height: 38px;
-    background-color: #f16d7f;
-    color: #ffffff;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none; }
-    .container .header-account .my_account:focus-within .my-account-cart {
+  .container .header-account .basket_hover {
+    padding-right: 18.42px;
+    padding-bottom: 2px; }
+    .container .header-account .basket_hover .basket i {
+      font-size: 34px;
+      color: #222222; }
+      .container .header-account .basket_hover .basket i:hover {
+        cursor: pointer;
+        color: #a4a4a4; }
+    .container .header-account .basket_hover .basket:hover {
+      transform: scale(1.5);
+      transition: 0.5s; }
+    .container .header-account .basket_hover .my-account-cart {
+      display: none; }
+      .container .header-account .basket_hover .my-account-cart .selected-item {
+        margin-bottom: 21px;
+        width: 230px; }
+        .container .header-account .basket_hover .my-account-cart .selected-item div {
+          justify-content: space-around;
+          height: 85px; }
+          .container .header-account .basket_hover .my-account-cart .selected-item div img {
+            width: 72px;
+            height: 85px;
+            display: block; }
+          .container .header-account .basket_hover .my-account-cart .selected-item div .item-price {
+            color: #f16d7f;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase; }
+          .container .header-account .basket_hover .my-account-cart .selected-item div .item-name {
+            color: #222222;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase; }
+          .container .header-account .basket_hover .my-account-cart .selected-item div .item-stars a {
+            color: #e4af48;
+            font-family: "Font Awesome";
+            font-size: 12px;
+            font-weight: 400; }
+        .container .header-account .basket_hover .my-account-cart .selected-item .fa-times-circle-o {
+          color: #a4a4a4;
+          font-size: 16px;
+          font-weight: 400; }
+          .container .header-account .basket_hover .my-account-cart .selected-item .fa-times-circle-o:hover {
+            color: #f16d7f; }
+      .container .header-account .basket_hover .my-account-cart .total {
+        width: 230px;
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700; }
+      .container .header-account .basket_hover .my-account-cart button {
+        width: 225px;
+        height: 50px;
+        background-color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase; }
+        .container .header-account .basket_hover .my-account-cart button:active {
+          background-color: #a4a4a4; }
+      .container .header-account .basket_hover .my-account-cart .checkout-btn {
+        border: 1px solid #f16d7f;
+        color: #f16d7f; }
+        .container .header-account .basket_hover .my-account-cart .checkout-btn:hover {
+          background-color: #f16d7f;
+          color: #ffffff; }
+      .container .header-account .basket_hover .my-account-cart .go-to-cart-btn {
+        border: 1px solid #4a4a4a;
+        color: #4a4a4a; }
+        .container .header-account .basket_hover .my-account-cart .go-to-cart-btn:hover {
+          background-color: #4a4a4a;
+          color: #ffffff; }
+    .container .header-account .basket_hover:hover .my-account-cart {
       position: absolute;
       z-index: 99;
       width: 262px;
@@ -253,84 +306,26 @@ button:active {
       border: 1px solid #e1e1e1;
       border-radius: 5px;
       background-color: #ffffff;
-      top: 38px;
+      top: 36px;
       left: -30px;
       padding: 20px 15px 20px 17px; }
-    .container .header-account .my_account .my-account-link {
-      color: #ffffff;
-      outline: none; }
-    .container .header-account .my_account:hover {
-      cursor: pointer;
-      background-color: #a4a4a4; }
-    .container .header-account .my_account .my-account-cart {
-      display: none; }
-      .container .header-account .my_account .my-account-cart .selected-item {
-        margin-bottom: 21px;
-        width: 230px; }
-        .container .header-account .my_account .my-account-cart .selected-item div {
-          justify-content: space-around;
-          height: 85px; }
-          .container .header-account .my_account .my-account-cart .selected-item div img {
-            width: 72px;
-            height: 85px;
-            display: block; }
-          .container .header-account .my_account .my-account-cart .selected-item div .item-price {
-            color: #f16d7f;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase; }
-          .container .header-account .my_account .my-account-cart .selected-item div .item-name {
-            color: #222222;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase; }
-          .container .header-account .my_account .my-account-cart .selected-item div .item-stars a {
-            color: #e4af48;
-            font-family: "Font Awesome";
-            font-size: 12px;
-            font-weight: 400; }
-        .container .header-account .my_account .my-account-cart .selected-item .fa-times-circle-o {
-          color: #a4a4a4;
-          font-size: 16px;
-          font-weight: 400; }
-          .container .header-account .my_account .my-account-cart .selected-item .fa-times-circle-o:hover {
-            color: #f16d7f; }
-      .container .header-account .my_account .my-account-cart .total {
-        width: 230px;
-        color: #222222;
-        font-size: 16px;
-        font-weight: 700; }
-      .container .header-account .my_account .my-account-cart button {
-        width: 225px;
-        height: 50px;
-        background-color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase; }
-        .container .header-account .my_account .my-account-cart button:active {
-          background-color: #a4a4a4; }
-      .container .header-account .my_account .my-account-cart .checkout-btn {
-        border: 1px solid #f16d7f;
-        color: #f16d7f; }
-        .container .header-account .my_account .my-account-cart .checkout-btn:hover {
-          background-color: #f16d7f;
-          color: #ffffff; }
-      .container .header-account .my_account .my-account-cart .go-to-cart-btn {
-        border: 1px solid #4a4a4a;
-        color: #4a4a4a; }
-        .container .header-account .my_account .my-account-cart .go-to-cart-btn:hover {
-          background-color: #4a4a4a;
-          color: #ffffff; }
-    .container .header-account .my_account:focus .my-account-cart {
-      position: absolute;
-      width: 262px;
-      height: 440px;
-      border: 1px solid #e1e1e1;
-      border-radius: 5px;
-      background-color: #ffffff;
-      top: 53px;
-      left: -30px;
-      padding: 20px 15px 20px 17px; }
+
+.container .my_account {
+  width: 130px;
+  height: 38px;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none; }
+  .container .my_account .my-account-link {
+    color: #ffffff;
+    outline: none; }
+  .container .my_account:hover {
+    cursor: pointer;
+    background-color: #a4a4a4; }
 
 .menu {
   display: flex;
@@ -346,7 +341,7 @@ button:active {
     height: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 0px 21px; }
+    padding: 10px 21px; }
     .menu .menu-section:hover {
       opacity: 0.7; }
   .menu .menu-woman a {
@@ -362,9 +357,10 @@ button:active {
     border: 1px solid #e1e1e1;
     border-radius: 5px;
     background-color: #ffffff;
-    top: 137px;
-    left: 490px;
-    padding: 20px 25px; }
+    top: 144px;
+    left: 315px;
+    padding: 20px 25px;
+    padding-top: 5px; }
     .menu .menu-woman .menu-drop-down .menu-dr-dn-column {
       display: flex;
       flex-direction: column;
@@ -397,7 +393,7 @@ button:active {
         .menu .menu-woman .menu-drop-down .menu-dr-dn-column a:active {
           color: #222222; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .my_account .my-account-cart .selected-item, .container .header-account .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -408,7 +404,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .my_account:focus-within .my-account-cart, .container .header-account .my_account .my-account-cart .selected-item div, .container .header-account .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -525,7 +521,7 @@ button:active {
         .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover {
           position: absolute;
           display: none;
-          width: 263px;
+          width: 260px;
           height: 281px;
           background-color: #4a4a4a;
           color: #ffffff;
@@ -574,7 +570,7 @@ button:active {
 .container {
   padding: 0px; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .my_account .my-account-cart .selected-item, .container .header-account .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -585,7 +581,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .my_account:focus-within .my-account-cart, .container .header-account .my_account .my-account-cart .selected-item div, .container .header-account .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -689,7 +685,7 @@ button:active {
       .subscribe .sbsc-content .sbsc-right button:hover {
         background-color: #c7c7c7; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .my_account .my-account-cart .selected-item, .container .header-account .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -700,7 +696,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .my_account:focus-within .my-account-cart, .container .header-account .my_account .my-account-cart .selected-item div, .container .header-account .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -769,7 +765,7 @@ button:active {
         .about-us .nav-about-us .about-us-information a:hover {
           color: #f16d7f; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .my_account .my-account-cart .selected-item, .container .header-account .my_account .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, main .clothes-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -780,7 +776,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .my_account:focus-within .my-account-cart, .container .header-account .my_account .my-account-cart .selected-item div, .container .header-account .my_account:focus .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
+.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
