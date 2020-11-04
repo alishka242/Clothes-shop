@@ -26,7 +26,7 @@ const catalog = {
             htmlStr += `
             <div class="clothes">
                 <a href="#">
-                    <img src="img/4_fetured/fetured_${i + 1}.jpg" alt="photo">
+                    <img src="../crs/accets/img/4_fetured/fetured_${i + 1}.jpg" alt="photo">
                     <div class="ftr-product_hover">
                         <p><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Add to Cart</p>
                     </div>

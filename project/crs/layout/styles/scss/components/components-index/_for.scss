@@ -35,13 +35,13 @@
         height: 823px;
         @extend .flexColumn;
         .for-men {
-            background-image: url('../img/3_for/for-men.jpg');
+            background-image: url('../../../accets/img/3_for/for-men.jpg');
             background-repeat: no-repeat;
             width: 560px;
             height: 542px;
         }
         .accesories {
-            background-image: url('../img/3_for/accesories.jpg');
+            background-image: url('../../../accets/img/3_for/accesories.jpg');
             background-repeat: no-repeat;
             background-color: #dadad2;
             background-position: top right;
@@ -56,14 +56,14 @@
         height: 823px;
         @extend .flexColumn;
         .for-women {
-            background-image: url('../img/3_for/for-women.jpg');
+            background-image: url('../../../accets/img/3_for/for-women.jpg');
             background-repeat: no-repeat;
             width: 560px;
             height: 261px;
         }
         
         .for-kids {
-            background-image: url('../img/3_for/for-kids.jpg');
+            background-image: url('../../../accets/img/3_for/for-kids.jpg');
             background-repeat: no-repeat;
             width: 560px;
             height: 542px;
