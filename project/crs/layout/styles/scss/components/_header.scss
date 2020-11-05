@@ -148,10 +148,10 @@
         position: relative;
 
 
-        .basket_hover {
+        #basket {
             padding-right: 18.42px;
             padding-bottom: 2px;
-            .basket {
+            .basket-link {
                 i {
                     font-size: 34px;
                     color: $baseTextColor;
@@ -168,7 +168,7 @@
                 }
             }
 
-            .my-account-cart {
+            #basket_inner {
                 display: none;
 
                 .selected-item {
@@ -262,7 +262,7 @@
                 }
             }
 
-            &:hover .my-account-cart {
+            &:hover #basket_inner {
                 @extend .flexColumn;
                 position: absolute;
                 z-index: 99;
@@ -343,7 +343,7 @@
             border-radius: 5px;
             background-color: $lightBckgColor;
             top: 144px;
-            left: 315px;
+            left: 388px;
             padding: 20px 25px;
             padding-top: 5px;
 

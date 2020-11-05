@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'fontAwesome';
-  src: url("../../../../accets/fonts/fontawesome-webfont.ttf") format("truetype"), url("../../../../accets/fonts/fontawesome-webfont.woff") format("woff"), url("../../../../accets/fonts/fontawesome-webfont.woff2") format("woff2"); }
+  src: url("../../../accets/fonts/fontawesome-webfont.ttf") format("truetype"), url("../../../accets/fonts/fontawesome-webfont.woff") format("woff"), url("../../../accets/fonts/fontawesome-webfont.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url("../../../../accets/fonts/Roboto-Bold.ttf"); }
+  src: url("../../../accets/fonts/Roboto-Bold.ttf"); }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url("../../../../accets/fonts/Roboto-Regular.ttf"); }
+  font-family: '../../../Roboto-Regular';
+  src: url("../../../accets/fonts/Roboto-Regular.ttf"); }
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url("../../../../accets/fonts/Roboto-Light.ttf"); }
+  src: url("../../../accets/fonts/Roboto-Light.ttf"); }
 
 @font-face {
   font-family: 'Roboto-Thin';
-  src: url("../../../../accets/fonts/Roboto-Thin.ttf"); }
+  src: url("../../../accets/fonts/Roboto-Thin.ttf"); }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +84,7 @@ button:active {
   margin: 0 auto;
   width: 1145px; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,7 +95,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -227,78 +227,78 @@ button:active {
 .container .header-account {
   width: 161.58px;
   position: relative; }
-  .container .header-account .basket_hover {
+  .container .header-account #basket {
     padding-right: 18.42px;
     padding-bottom: 2px; }
-    .container .header-account .basket_hover .basket i {
+    .container .header-account #basket .basket-link i {
       font-size: 34px;
       color: #222222; }
-      .container .header-account .basket_hover .basket i:hover {
+      .container .header-account #basket .basket-link i:hover {
         cursor: pointer;
         color: #a4a4a4; }
-    .container .header-account .basket_hover .basket:hover {
+    .container .header-account #basket .basket-link:hover {
       transform: scale(1.5);
       transition: 0.5s; }
-    .container .header-account .basket_hover .my-account-cart {
+    .container .header-account #basket #basket_inner {
       display: none; }
-      .container .header-account .basket_hover .my-account-cart .selected-item {
+      .container .header-account #basket #basket_inner .selected-item {
         margin-bottom: 21px;
         width: 230px; }
-        .container .header-account .basket_hover .my-account-cart .selected-item div {
+        .container .header-account #basket #basket_inner .selected-item div {
           justify-content: space-around;
           height: 85px; }
-          .container .header-account .basket_hover .my-account-cart .selected-item div img {
+          .container .header-account #basket #basket_inner .selected-item div img {
             width: 72px;
             height: 85px;
             display: block; }
-          .container .header-account .basket_hover .my-account-cart .selected-item div .item-price {
+          .container .header-account #basket #basket_inner .selected-item div .item-price {
             color: #f16d7f;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase; }
-          .container .header-account .basket_hover .my-account-cart .selected-item div .item-name {
+          .container .header-account #basket #basket_inner .selected-item div .item-name {
             color: #222222;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase; }
-          .container .header-account .basket_hover .my-account-cart .selected-item div .item-stars a {
+          .container .header-account #basket #basket_inner .selected-item div .item-stars a {
             color: #e4af48;
             font-family: "Font Awesome";
             font-size: 12px;
             font-weight: 400; }
-        .container .header-account .basket_hover .my-account-cart .selected-item .fa-times-circle-o {
+        .container .header-account #basket #basket_inner .selected-item .fa-times-circle-o {
           color: #a4a4a4;
           font-size: 16px;
           font-weight: 400; }
-          .container .header-account .basket_hover .my-account-cart .selected-item .fa-times-circle-o:hover {
+          .container .header-account #basket #basket_inner .selected-item .fa-times-circle-o:hover {
             color: #f16d7f; }
-      .container .header-account .basket_hover .my-account-cart .total {
+      .container .header-account #basket #basket_inner .total {
         width: 230px;
         color: #222222;
         font-size: 16px;
         font-weight: 700; }
-      .container .header-account .basket_hover .my-account-cart button {
+      .container .header-account #basket #basket_inner button {
         width: 225px;
         height: 50px;
         background-color: #ffffff;
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase; }
-        .container .header-account .basket_hover .my-account-cart button:active {
+        .container .header-account #basket #basket_inner button:active {
           background-color: #a4a4a4; }
-      .container .header-account .basket_hover .my-account-cart .checkout-btn {
+      .container .header-account #basket #basket_inner .checkout-btn {
         border: 1px solid #f16d7f;
         color: #f16d7f; }
-        .container .header-account .basket_hover .my-account-cart .checkout-btn:hover {
+        .container .header-account #basket #basket_inner .checkout-btn:hover {
           background-color: #f16d7f;
           color: #ffffff; }
-      .container .header-account .basket_hover .my-account-cart .go-to-cart-btn {
+      .container .header-account #basket #basket_inner .go-to-cart-btn {
         border: 1px solid #4a4a4a;
         color: #4a4a4a; }
-        .container .header-account .basket_hover .my-account-cart .go-to-cart-btn:hover {
+        .container .header-account #basket #basket_inner .go-to-cart-btn:hover {
           background-color: #4a4a4a;
           color: #ffffff; }
-    .container .header-account .basket_hover:hover .my-account-cart {
+    .container .header-account #basket:hover #basket_inner {
       position: absolute;
       z-index: 99;
       width: 262px;
@@ -358,7 +358,7 @@ button:active {
     border-radius: 5px;
     background-color: #ffffff;
     top: 144px;
-    left: 315px;
+    left: 388px;
     padding: 20px 25px;
     padding-top: 5px; }
     .menu .menu-woman .menu-drop-down .menu-dr-dn-column {
@@ -393,7 +393,7 @@ button:active {
         .menu .menu-woman .menu-drop-down .menu-dr-dn-column a:active {
           color: #222222; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -404,7 +404,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -504,7 +504,7 @@ button:active {
       flex-direction: column;
       justify-content: space-between;
       margin-top: 20px; }
-      .fetured-items-conteuner .ftr-product .clothes a {
+      .fetured-items-conteuner .ftr-product .clothes .clother_photo {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -513,12 +513,12 @@ button:active {
         text-transform: uppercase;
         width: 260px;
         height: 280px; }
-        .fetured-items-conteuner .ftr-product .clothes a img {
+        .fetured-items-conteuner .ftr-product .clothes .clother_photo img {
           display: block;
           z-index: 0;
           width: 260px;
           height: 280px; }
-        .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover {
+        .fetured-items-conteuner .ftr-product .clothes .clother_photo .ftr-product_hover {
           position: absolute;
           display: none;
           width: 260px;
@@ -528,7 +528,7 @@ button:active {
           font-size: 13px;
           font-weight: 400;
           opacity: 0.8; }
-          .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover p {
+          .fetured-items-conteuner .ftr-product .clothes .clother_photo .ftr-product_hover button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -536,7 +536,7 @@ button:active {
             height: 37px;
             border: 1px solid #ffffff;
             text-transform: lowercase; }
-            .fetured-items-conteuner .ftr-product .clothes a .ftr-product_hover p:hover {
+            .fetured-items-conteuner .ftr-product .clothes .clother_photo .ftr-product_hover button:hover {
               background-color: #e6e6e6;
               color: #4a4a4a; }
       .fetured-items-conteuner .ftr-product .clothes .clothers-p .ftr-name {
@@ -546,7 +546,8 @@ button:active {
       .fetured-items-conteuner .ftr-product .clothes .clothers-p .ftr-price {
         color: #f16d7f;
         font-size: 16px; }
-      .fetured-items-conteuner .ftr-product .clothes p {
+      .fetured-items-conteuner .ftr-product .clothes p, .fetured-items-conteuner .ftr-product .clothes a {
+        display: block;
         font-weight: 700;
         margin-bottom: 20px;
         margin-left: 15px; }
@@ -570,7 +571,7 @@ button:active {
 .container {
   padding: 0px; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -581,7 +582,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -685,7 +686,7 @@ button:active {
       .subscribe .sbsc-content .sbsc-right button:hover {
         background-color: #c7c7c7; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -696,7 +697,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -765,7 +766,7 @@ button:active {
         .about-us .nav-about-us .about-us-information a:hover {
           color: #f16d7f; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -776,7 +777,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -832,7 +833,7 @@ footer {
             color: #ffffff;
             background-color: #f16d7f; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -843,7 +844,7 @@ footer {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -899,7 +900,7 @@ footer {
     .container_color .the-brand img {
       height: 40px; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -910,7 +911,7 @@ footer {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -983,7 +984,7 @@ footer {
       width: 560px;
       height: 542px; }
 
-.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account .basket_hover .my-account-cart .selected-item, .container .header-account .basket_hover .my-account-cart .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
+.flexRow, .logo a, .container .header, .container .header .header-search, .container .header .header-search .logo a, .container .header-account, .container .header-account #basket #basket_inner .selected-item, .container .header-account #basket #basket_inner .total, .menu .menu-woman:hover .menu-drop-down, .way_background .way, .subscribe .sbsc-content, .about-us .about-us-text .logo a, .for {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -994,7 +995,7 @@ footer {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account .basket_hover .my-account-cart .selected-item div, .container .header-account .basket_hover:hover .my-account-cart, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
