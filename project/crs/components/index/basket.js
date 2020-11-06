@@ -42,23 +42,21 @@ function initBasket() {
             this.totalContainer.innerText = this.sum;
         },
         add(item = {productId: 0}) {
-            console.log(item);
-            console.log(this.items);
-
+            
+            let  toggle = false;  
               
-            this.items.forEach(el => {
-                let itemProductId = item.productId;  
-                if(el.productId != 0){
-                    this.items.productAmount += 1;                     
-                } else {
-                    
+            this.items.forEach((el, index) => {
+                if(el.productId === item.productId){
+                    el.productAmount += 1;
+                    toggle = true;
                     this._render();
                 }
             });
-          
-            //если товара в корзине нет, то его надо добавить
-            //если он там уже есть, то добавить количество
-            // перерендер (соотв и персчет)
+            if(!toggle && item.productId !== 0 ){
+                console.log("добавили");
+                this.items.push(item);
+                this._render();
+            }
         },
         _remove() {
             //реализовать
