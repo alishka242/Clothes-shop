@@ -151,6 +151,7 @@
         #basket {
             padding-right: 18.42px;
             padding-bottom: 2px;
+
             .basket-link {
                 i {
                     font-size: 34px;
@@ -171,21 +172,27 @@
             #basket_inner {
                 display: none;
 
+                #basket_items {
+                    overflow: auto;
+                    height: 220px;
+                }
+
                 .selected-item {
                     margin-bottom: 21px;
                     width: 230px;
                     @extend .flexRow;
+                    margin-right: 10px;
+
+                    img {
+                        width: 75px;
+                        height: 85px;
+                        display: block;
+                    }
 
                     div {
                         @extend .flexColumn;
                         justify-content: space-around;
                         height: 85px;
-
-                        img {
-                            width: 72px;
-                            height: 85px;
-                            display: block;
-                        }
 
                         .item-price {
                             color: $baseBtnColor;

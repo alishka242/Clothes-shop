@@ -92,7 +92,7 @@ function createBasketItem(index, titles, prices, amounts) {
 function renderBasketTemplate(item, i) {
     return `
     <div class="selected-item">
-        <a href="#"><img src="../crs/accets/img/1_header/item-${i + 1}.jpg" alt="photo"></a>
+        <a href="#"><img src="../crs/accets/img/4_fetured/fetured_${i + 1}.jpg" alt="photo"></a>
         <div>
             <p><a href="#" class="item-name">Rebox Zane</a></p>
             <p class="item-stars">
