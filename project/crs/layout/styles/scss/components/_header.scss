@@ -153,6 +153,9 @@
             padding-bottom: 2px;
 
             .basket-link {
+                border: 0;
+                background-color: white;
+
                 i {
                     font-size: 34px;
                     color: $baseTextColor;
@@ -160,21 +163,32 @@
                     &:hover {
                         cursor: pointer;
                         color: $lightGray;
+                        transform: scale(1.5);
+                        transition: 0.5s;
                     }
-                }
-
-                &:hover {
-                    transform: scale(1.5);
-                    transition: 0.5s;
                 }
             }
 
+            .hidden {
+                display: none !important;
+            }
+
             #basket_inner {
-                display: none;
+                @extend .flexColumn;
+                position: absolute;
+                z-index: 99;
+                width: 262px;
+                max-height: 440px;
+                border: 1px solid $borderColor;
+                border-radius: 5px;
+                background-color: $lightBckgColor;
+                top: 36px;
+                left: -30px;
+                padding: 20px 15px 20px 17px;
 
                 #basket_items {
                     overflow: auto;
-                    height: 220px;
+                    max-height: 220px;
                 }
 
                 .selected-item {
@@ -251,6 +265,7 @@
                 .checkout-btn {
                     border: 1px solid $baseBtnColor;
                     color: $baseBtnColor;
+                    margin: 10px 0;
 
                     &:hover {
                         background-color: $baseBtnColor;
@@ -267,20 +282,6 @@
                         color: $lightBckgColor;
                     }
                 }
-            }
-
-            &:hover #basket_inner {
-                @extend .flexColumn;
-                position: absolute;
-                z-index: 99;
-                width: 262px;
-                height: 440px;
-                border: 1px solid $borderColor;
-                border-radius: 5px;
-                background-color: $lightBckgColor;
-                top: 36px;
-                left: -30px;
-                padding: 20px 15px 20px 17px;
             }
         }
     }
@@ -321,7 +322,7 @@
         align-items: center;
         font-size: 14px;
         height: 20px;
-        font-weight: 700;
+        font-weight: 400;
         text-transform: uppercase;
         padding: 10px 21px;
 

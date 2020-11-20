@@ -1,16 +1,8 @@
 function initBasket() {
-    let titles = [
-        'MARINA CLUB People T-shirt',
-        'Mango People Red Bluse',
-    ];
-
-    let prices = [32.00, 42.00];
-
-    let amounts = [4, 2];
-
     const basket = {
         items: [],
         total: null,
+        url: 'https://raw.githubusercontent.com/alishka242/static/master/JSON/basket.json',
         container: null, //basket_items
         wrapper: null, //basket-all
         sum: 0,
@@ -19,8 +11,17 @@ function initBasket() {
             this.container = document.querySelector('#basket_items');
             this.wrapper = document.querySelector('#basket_inner');
             this.totalContainer = document.querySelector('#basket_sum');
-            this.items = getBasketItems(titles, prices, amounts);
-            this._render();
+
+            //async
+            this._get(this.url)
+                .then(basket => {
+                    this.items = basket.content;
+                    this._render();
+                    this._handelEvents();
+                });
+        },
+        _get(url) {
+            return fetch(url).then(d => d.json()); //сделает запрос за джейсоном, дождется ответа и преобразует джейсон в объект, который вернется из данного метода
         },
         _render() {
             let htmlStr = '';
@@ -30,71 +31,62 @@ function initBasket() {
             });
 
             this.container.innerHTML = htmlStr;
-            
             this._calcSum();
-            this.add();
         },
         _calcSum() {
             this.sum = 0;
             this.items.forEach(item => {
-                this.sum += item.productAmount * item.productPrice;
+                this.sum += item.amount * item.productPrice;
             });
             this.totalContainer.innerText = this.sum;
         },
-        add(item = {productId: 0}) {
-            
-            let  toggle = false;  
-              
-            this.items.forEach((el, index) => {
-                if(el.productId === item.productId){
-                    el.productAmount += 1;
-                    toggle = true;
-                    this._render();
+        add(item) {
+            let find = this.items.find(el => item.productId == el.productId);
+
+            if (find) {
+                find.amount++;
+            } else {
+                this.items.push(Object.assign({}, item, {
+                    amount: 1
+                }));
+            }
+
+            this._render();
+        },
+        _remove(id) {
+            let find = this.items.find(el => el.productId == id);
+
+            if (find.amount > 1) {
+                find.amount--;
+            } else {
+                this.items.splice(this.items.indexOf(find), 1);
+            }
+
+            this._render();
+        },
+        _handelEvents() {
+            // +++ организовать скрытие/показ корзины по клику а не по ховеру
+            document.querySelector('#basket-btn').addEventListener('click', e => {
+                this.wrapper.classList.toggle('hidden');
+            });
+
+            this.container.addEventListener('click', event => {
+                if (event.target.name == 'remove') {
+                    this._remove(event.target.dataset.id);
                 }
             });
-            if(!toggle && item.productId !== 0 ){
-                console.log("добавили");
-                this.items.push(item);
-                this._render();
-            }
         },
-        _remove() {
-            //реализовать
-        },
-        _handleEvents() {
-            // +++ организовать скрытие/показ корзины по клику а не по ховеру
-        }
-    }
+    };
     return basket;
     //basket.init();
 }
 
-function getBasketItems(titles, prices, amounts) {
-    let arr = [];
-
-    for (let i = 0; i < titles.length; i++) {
-        arr.push(createBasketItem(i, titles, prices, amounts));
-    }
-
-    return arr;
-}
-
-function createBasketItem(index, titles, prices, amounts) {
-    return {
-        productId: `prod_${index + 1}`,
-        productName: titles[index],
-        productPrice: prices[index],
-        productAmount: amounts[index],
-    }
-}
-
-
 function renderBasketTemplate(item, i) {
     return `
     <div class="selected-item">
-        <a href="#"><img src="../crs/accets/img/4_fetured/fetured_${i + 1}.jpg" alt="photo"></a>
+        <a href="#"><img src="${item.productImg}" alt="photo"></a>
         <div>
-            <p><a href="#" class="item-name">Rebox Zane</a></p>
+            <p><a href="#" class="item-name">${item.productName}</a></p>
             <p class="item-stars">
                 <a href="#">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -104,9 +96,13 @@ function renderBasketTemplate(item, i) {
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                 </a>
             </p>
-            <p class="item-price">${item.productAmount} x &#36; ${item.productPrice}</p>
+            <p class="item-price">${item.amount} x &#36; ${item.productPrice}</p>
         </div>
-        <a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+        
+        <a href="#" name="remove" class="fa fa-times-circle-o" data-id="${item.productId}"></a>
     </div>
     `
 }
+
+{
+    /* <a href="#" class="cart_close fas fa-times-circle" name="remove" data-id="${item.productId}"></a> */ }

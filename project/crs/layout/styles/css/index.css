@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -95,7 +95,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -230,20 +230,33 @@ button:active {
   .container .header-account #basket {
     padding-right: 18.42px;
     padding-bottom: 2px; }
-    .container .header-account #basket .basket-link i {
-      font-size: 34px;
-      color: #222222; }
-      .container .header-account #basket .basket-link i:hover {
-        cursor: pointer;
-        color: #a4a4a4; }
-    .container .header-account #basket .basket-link:hover {
-      transform: scale(1.5);
-      transition: 0.5s; }
+    .container .header-account #basket .basket-link {
+      border: 0;
+      background-color: white; }
+      .container .header-account #basket .basket-link i {
+        font-size: 34px;
+        color: #222222; }
+        .container .header-account #basket .basket-link i:hover {
+          cursor: pointer;
+          color: #a4a4a4;
+          transform: scale(1.5);
+          transition: 0.5s; }
+    .container .header-account #basket .hidden {
+      display: none !important; }
     .container .header-account #basket #basket_inner {
-      display: none; }
+      position: absolute;
+      z-index: 99;
+      width: 262px;
+      max-height: 440px;
+      border: 1px solid #e1e1e1;
+      border-radius: 5px;
+      background-color: #ffffff;
+      top: 36px;
+      left: -30px;
+      padding: 20px 15px 20px 17px; }
       .container .header-account #basket #basket_inner #basket_items {
         overflow: auto;
-        height: 220px; }
+        max-height: 220px; }
       .container .header-account #basket #basket_inner .selected-item {
         margin-bottom: 21px;
         width: 230px;
@@ -292,7 +305,8 @@ button:active {
           background-color: #a4a4a4; }
       .container .header-account #basket #basket_inner .checkout-btn {
         border: 1px solid #f16d7f;
-        color: #f16d7f; }
+        color: #f16d7f;
+        margin: 10px 0; }
         .container .header-account #basket #basket_inner .checkout-btn:hover {
           background-color: #f16d7f;
           color: #ffffff; }
@@ -302,17 +316,6 @@ button:active {
         .container .header-account #basket #basket_inner .go-to-cart-btn:hover {
           background-color: #4a4a4a;
           color: #ffffff; }
-    .container .header-account #basket:hover #basket_inner {
-      position: absolute;
-      z-index: 99;
-      width: 262px;
-      height: 440px;
-      border: 1px solid #e1e1e1;
-      border-radius: 5px;
-      background-color: #ffffff;
-      top: 36px;
-      left: -30px;
-      padding: 20px 15px 20px 17px; }
 
 .container .my_account {
   width: 130px;
@@ -343,7 +346,7 @@ button:active {
     align-items: center;
     font-size: 14px;
     height: 20px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 10px 21px; }
     .menu .menu-section:hover {
@@ -408,7 +411,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -586,7 +589,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -701,7 +704,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -781,7 +784,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -848,7 +851,7 @@ footer {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -915,7 +918,7 @@ footer {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -999,7 +1002,7 @@ footer {
   flex-direction: row;
   justify-content: space-between; }
 
-.flexColumn, .container .header-account #basket #basket_inner .selected-item div, .container .header-account #basket:hover #basket_inner, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
+.flexColumn, .container .header-account #basket #basket_inner, .container .header-account #basket #basket_inner .selected-item div, .fetured-items-conteuner, .fetured-items-conteuner .fetured-items, .for .for-left, .for .for-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

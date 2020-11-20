@@ -1,27 +1,24 @@
 function initCatalog() {
-    let titles = [
-        'MARINA CLUB People T-shirt',
-        'Mango People Red Bluse',
-        'Mango People Jacket',
-        'Mango People Bluse With Flowers',
-        'Mango People Bluse in Line',
-        'Mango People Hat',
-        'Mango People Pants',
-        'Mango People Blue Hoody'
-    ];
-
-    let prices = [32.00, 42.00, 84.00, 35.00, 12.00, 54.00, 68.00, 90.00];
-
     const catalog = {
         items: [],
         container: null,
         basket: null,
+        url: 'https://raw.githubusercontent.com/alishka242/static/master/JSON/catalog.json',
         init(basket) {
             this.container = document.querySelector('#catalog');
-            this.items = getCatalogItems(titles, prices);
             this.basket = basket;
-            this._render();
-            this._handeleEvents();
+
+            //async
+            this._get(this.url)
+            .then(catalog => {
+                this.items = catalog;
+                this._render();
+                this._handelEvents();
+            });
+        },
+
+        _get(url) {
+            return fetch(url).then(d => d.json()); //сделает запрос за джейсоном, дождется ответа и преобразует джейсон в объект, который вернется из данного метода
         },
 
         _render() {
@@ -34,44 +31,26 @@ function initCatalog() {
             this.container.innerHTML = htmlStr;
         },
 
-        _handeleEvents() {
+        _handelEvents() {
             this.container.addEventListener('click', event => {
-                if(event.target.name == 'add') {
+                if (event.target.name == 'add') {
                     // console.log('КУПЛЕНО!')
                     let id = event.target.dataset.id; //from data-id
                     let item = this.items.find(el => el.productId == id);
-
-                    item = Object.assign({}, item, { productAmount: 1 });
                     this.basket.add(item);
                 }
             });
-        }
-    }
+        },
+    };
 
     return catalog;
-}
-
-function getCatalogItems(titles, prices) {
-    let arr = [];
-    for (let i = 0; i < titles.length; i++) {
-        arr.push(createCatalogItem(i, titles, prices));
-    }
-    return arr;
-}
-
-function createCatalogItem(index, titles, prices) {
-    return {
-        productName: titles[index],
-        productPrice: prices[index],
-        productId: `prod_${index + 1}`,
-    }
 }
 
 function renderCatalogTemplate(item, i) {
     return `
     <div class="clothes">
         <div class="clother_photo">
-            <img src="../crs/accets/img/4_fetured/fetured_${i + 1}.jpg" alt="photo">
+            <img src="${item.productImg}" alt="photo">
             <div class="ftr-product_hover">
                 <button name="add" data-id="${item.productId}">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Add to Cart
