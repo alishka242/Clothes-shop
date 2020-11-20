@@ -232,15 +232,20 @@ button:active {
     padding-bottom: 2px; }
     .container .header-account #basket .basket-link {
       border: 0;
-      background-color: white; }
-      .container .header-account #basket .basket-link i {
-        font-size: 34px;
-        color: #222222; }
-        .container .header-account #basket .basket-link i:hover {
-          cursor: pointer;
-          color: #a4a4a4;
-          transform: scale(1.5);
-          transition: 0.5s; }
+      background-color: white;
+      font-size: 34px;
+      color: #222222; }
+      .container .header-account #basket .basket-link:hover {
+        cursor: pointer;
+        color: #a4a4a4;
+        transform: scale(1.5);
+        transition: 0.5s; }
+    .container .header-account #basket .fa-times-circle-o {
+      color: #a4a4a4;
+      font-size: 16px;
+      font-weight: 400; }
+      .container .header-account #basket .fa-times-circle-o:hover {
+        color: #f16d7f; }
     .container .header-account #basket .hidden {
       display: none !important; }
     .container .header-account #basket #basket_inner {
@@ -283,12 +288,6 @@ button:active {
             font-family: "Font Awesome";
             font-size: 12px;
             font-weight: 400; }
-        .container .header-account #basket #basket_inner .selected-item .fa-times-circle-o {
-          color: #a4a4a4;
-          font-size: 16px;
-          font-weight: 400; }
-          .container .header-account #basket #basket_inner .selected-item .fa-times-circle-o:hover {
-            color: #f16d7f; }
       .container .header-account #basket #basket_inner .total {
         width: 230px;
         color: #222222;
